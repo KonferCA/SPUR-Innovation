@@ -25,11 +25,11 @@ const FooterSection: React.FC = () => {
                 </div>
             </div>
             {/* Mailing List */}
-            <div className="flex flex-col gap-2 w-1/3">
+            <div className="flex flex-col gap-5 w-1/3 pr-16">
                 <p className="text-2xl">Join our mailing list for exclusive news</p>
                 <div className="flex justify-between w-full">
                     {/* <label htmlFor="fname">First name:</label><br/> */}
-                    <input type="text" id="fname" name="fname" defaultValue="Enter you email" className="pl-4 text-sm text-gray-300 border border-amber-600 rounded-full"/>
+                    <input type="text" id="fname" name="fname" defaultValue="Enter you email" className="pl-6 py-3 mr-8 grow text-gray-300/60 border border-amber-600 rounded-full"/>
                     <Button intent="secondary">Email Me</Button>
                 </div>
             </div>
