@@ -35,6 +35,13 @@ export { MarketplaceSection } from "./sections/Marketplace.section";
 
 /*
  *
+ * @component InnovationFund Section
+ *
+ */
+export { InnovationFundSection } from "./sections/InnovationFund.section";
+
+/*
+ *
  * @component Footer
  *
  */
@@ -53,3 +60,10 @@ export { Button } from "./Button/Button";
  *
  */
 export { CardComponent } from "./Card/Card";
+
+/*
+ *
+ * @component Slide deck
+ *
+ */
+export { SlideDeckComponent } from "./Card/SlideDeck";
