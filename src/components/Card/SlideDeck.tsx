@@ -81,7 +81,7 @@ const SlideDeckComponent: React.FC = () => {
                                 key={index}
                                 className={`w-4 h-1 rounded-md ${
                                     index === activeIndex
-                                        ? "bg-[#F59047]"
+                                        ? "bg-spurOrange"
                                         : "bg-gray-500"
                                 }`}
                             />

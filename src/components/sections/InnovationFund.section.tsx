@@ -3,9 +3,9 @@ import { Button, SlideDeckComponent } from "@components";
 const InnovationFundSection: React.FC = () => {
     return (
         <div>
-            <section className="relative px-36 h-screen flex justify-center items-center bg-gradient-to-br from-[#F59047]/70 via-[#2C2C2F]/40 to-[#0B1219]">
+            <section className="relative px-36 h-screen flex justify-center items-center bg-gradient-to-br from-spurOrange/70 via-[#2C2C2F]/40 to-nearBlack">
                 {/* Slide Deck Card */}
-                <div className="flex w-full justify-between items-center max-w-8xl h-[80vh] bg-[#0B1219]/5 backdrop-blur-3xl mx-auto border-1 border-white/30 rounded-4xl text-white shadow-inner-custom">
+                <div className="flex w-full justify-between items-center max-w-8xl h-[80vh] bg-nearBlack/5 backdrop-blur-3xl mx-auto border-1 border-white/30 rounded-4xl text-white shadow-inner-custom">
                     {/* Innovation Fund Details (Left-section) */}
                     <div className="flex flex-col gap-6 justify-end items-start p-20 w-1/2">
                         {/* Title */}
