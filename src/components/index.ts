@@ -35,6 +35,13 @@ export { MarketplaceSection } from "./sections/Marketplace.section";
 
 /*
  *
+ * @component Footer
+ *
+ */
+export { FooterSection } from "./sections/Footer.section";
+
+/*
+ *
  * @component Button
  *
  */
