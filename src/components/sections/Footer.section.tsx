@@ -29,7 +29,6 @@ const FooterSection: React.FC = () => {
           <div className="flex flex-col gap-5 w-1/3 max-w-lg">
             <p className="text-2xl">Join our mailing list for exclusive news</p>
             <div className="flex w-full gap-8">
-              {/* <label htmlFor="fname">First name:</label><br/> */}
               <input
                 type="text"
                 id="fname"
