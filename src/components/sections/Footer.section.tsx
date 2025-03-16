@@ -13,16 +13,16 @@ const FooterSection: React.FC = () => {
           <div className="flex gap-10 w-1/3 justify-center">
             <div className="flex flex-col gap-2">
               <h3 className="text-gradient text-2xl mb-2">About</h3>
-              <a>Our Story</a>
-              <a>Resources</a>
-              <a>News</a>
-              <a>Partners</a>
+              <a href="/coming-soon">Our Story</a>
+              <a href="/coming-soon">Resources</a>
+              <a href="/coming-soon">News</a>
+              <a href="/coming-soon">Partners</a>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-gradient text-2xl mb-2">Contact</h3>
-              <a>Join SPUR</a>
-              <a>Become a Partner</a>
-              <a>Contact Us</a>
+              <a href="/coming-soon">Join SPUR</a>
+              <a href="/coming-soon">Become a Partner</a>
+              <a href="/coming-soon">Contact Us</a>
             </div>
           </div>
           {/* Mailing List */}
