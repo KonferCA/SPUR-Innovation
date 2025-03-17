@@ -1,27 +1,44 @@
-import { SpurLogo } from "@assets";
+import {
+    McGill_logo,
+    Queens_logo,
+    TMU_logo,
+    UBC_logo,
+    UW_logo,
+    WLU_logo,
+} from "@assets";
 import { Button, Slider } from "@components";
 
 const PartnersSection: React.FC = () => {
     const partners = [
         {
             id: 1,
-            title: "Partner 1",
-            image: SpurLogo,
+            title: "McGill University",
+            image: McGill_logo,
         },
         {
             id: 2,
-            title: "Partner 2",
-            image: SpurLogo,
+            title: "Queens University",
+            image: Queens_logo,
         },
         {
             id: 3,
-            title: "Partner 3",
-            image: SpurLogo,
+            title: "Toronto Metropolitan University",
+            image: TMU_logo,
         },
         {
             id: 4,
-            title: "Partner 4",
-            image: SpurLogo,
+            title: "University of British Columbia",
+            image: UBC_logo,
+        },
+        {
+            id: 5,
+            title: "University of Waterloo",
+            image: UW_logo,
+        },
+        {
+            id: 6,
+            title: "Wilfrid Laurier University",
+            image: WLU_logo,
         },
     ];
     return (
@@ -57,7 +74,7 @@ const PartnersSection: React.FC = () => {
                                 key={index}
                                 src={partner.image}
                                 alt={partner.title}
-                                className="h-16"
+                                className="h-18"
                             />
                         </Slider.Slide>
                     ))}
