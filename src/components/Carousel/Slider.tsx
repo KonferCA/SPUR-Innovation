@@ -1,29 +1,23 @@
 import React, { useRef, useState } from "react";
 import { cn } from "@utils";
 
-/**
- * Slider Props
- */
+// Slider Props
 type SliderProps = {
     children: React.ReactElement[];
     speed?: number; // Speed of animation in seconds
     direction?: "left" | "right"; // Direction of scroll
     pauseOnHover?: boolean;
     blurEdges?: boolean;
-    className?: string; // Custom className for styling
+    className?: string;
 };
 
-/**
- * Slide Props
- */
+// Slide Props
 type SlideProps = {
     children: React.ReactNode;
     width?: string;
 };
 
-/**
- * Flexible Infinite Scrolling Slider Component
- */
+// Flexible Infinite Scrolling Slider Component
 const Slider: React.FC<SliderProps> & { Slide: React.FC<SlideProps> } = ({
     children,
     speed = 20,
@@ -65,9 +59,7 @@ const Slider: React.FC<SliderProps> & { Slide: React.FC<SlideProps> } = ({
     );
 };
 
-/**
- * Slide Component for Individual Items
- */
+// Slide Component for Individual Items
 const Slide: React.FC<SlideProps> = ({ children, width = "200px" }) => {
     return (
         <div className="flex items-center justify-center" style={{ width }}>
