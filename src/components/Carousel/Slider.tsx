@@ -37,8 +37,8 @@ const Slider: React.FC<SliderProps> & { Slide: React.FC<SlideProps> } = ({
         <div className={cn("relative w-full overflow-hidden", className)}>
             {blurEdges && (
                 <>
-                    <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-white to-transparent"></div>
-                    <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-white to-transparent"></div>
+                    <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-darkNavy to-transparent"></div>
+                    <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-darkNavy to-transparent"></div>
                 </>
             )}
 
