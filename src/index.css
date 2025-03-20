@@ -27,6 +27,7 @@ body {
     --color-darkNavy: #0d1a26;
     --color-offWhite: #f4faff;
     --color-spurOrange: #f59047;
+    --color-lightSpurOrange: #f59f47;
     --color-mutedNavy: #2b3f53;
     --color-spurTeal: #00bcd4;
 }
@@ -39,11 +40,11 @@ body {
 /* Text Gradients */
 
 .text-gradient {
-    @apply bg-gradient-to-tl from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+    @apply bg-gradient-to-l from-spurOrange via-lightSpurOrange to-offWhite bg-clip-text text-transparent;
 }
 
 .text-gradient-reverse {
-    @apply bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-spurOrange via-lightSpurOrange to-offWhite bg-clip-text text-transparent;
 }
 
 /* Slider Carousel  */
