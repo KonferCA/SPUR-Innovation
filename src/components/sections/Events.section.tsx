@@ -1,15 +1,23 @@
-import { SlideDeckComponent } from "@components";
+
 
 const EventsSection: React.FC = () => {
     return (
         <div>
-            <section className="relative px-36 h-screen flex justify-center items-center bg-gradient-to-br from-spurOrange/70 via-[#2C2C2F]/40 to-nearBlack">
-                {/* Slide Deck Card */}
-                <div className="flex w-full justify-between items-center max-w-8xl h-[80vh] bg-nearBlack/5 backdrop-blur-3xl mx-auto border-1 border-white/30 rounded-4xl text-white shadow-inner-custom">
-                    
-                    {/* Card slide deck (Right-section) */}
-                    <div className="relative flex w-1/2 max-w-5xl h-full">
-                        <SlideDeckComponent />
+            <section className="relative px-36 h-screen flex flex-col justify-center items-center bg-nearBlack">
+                {/* Title */}
+                <div className="flex flex-col items-center text-6xl">
+                    <div className="flex gap-5 leading-relaxed">
+                        <h1 className="text-gradient">Meet</h1>
+                        <h1 className="text-gradient">Us</h1>
+                        <h1 className="text-gradient">At</h1>
+                        <h1 className="text-gradient">Industry-</h1>
+                        <h1 className="text-gradient -ml-5">Leading</h1>
+                        <h1 className="text-gradient">Events,</h1>
+                    </div>
+                    <div className="flex gap-5 -mt-5">
+                        <h1 className="text-gradient-reverse">Conferences</h1>
+                        <h1 className="text-gradient-reverse">and</h1>
+                        <h1 className="text-gradient-reverse">Summits</h1>
                     </div>
                 </div>
             </section>
