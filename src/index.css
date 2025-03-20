@@ -45,3 +45,36 @@ body {
 .text-gradient-reverse {
     @apply bg-gradient-to-br from-[#F59047] to-[#FFEEE2] bg-clip-text text-transparent;
 }
+
+/* Slider Carousel  */
+@layer utilities {
+    @keyframes marquee-left {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    @keyframes marquee-right {
+        from {
+            transform: translateX(-50%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .animate-marquee-left {
+        animation: marquee-left linear infinite;
+    }
+
+    .animate-marquee-right {
+        animation: marquee-right linear infinite;
+    }
+
+    .paused {
+        animation-play-state: paused !important;
+    }
+}
