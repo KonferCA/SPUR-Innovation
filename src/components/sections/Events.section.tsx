@@ -1,6 +1,55 @@
-
+import { Vexacool } from "@assets";
+import { EventCarousel } from "@components";
 
 const EventsSection: React.FC = () => {
+    const events = [
+        {
+            image: Vexacool,
+            tags: ["Tech", "AI"],
+            title: "Future of AI Conference",
+            description:
+                "Explore the latest trends in AI and machine learning.",
+            date: "March 15, 2025",
+            location: "San Francisco, CA",
+            link: "https://example.com",
+        },
+        {
+            image: Vexacool,
+            tags: ["Business", "Networking"],
+            title: "Startup Connect 2025",
+            description: "Meet founders, VCs, and industry leaders.",
+            date: "April 10, 2025",
+            location: "New York, NY",
+            link: "https://example.com",
+        },
+        {
+            image: Vexacool,
+            tags: ["Business", "Networking"],
+            title: "Startup Connect 2025",
+            description: "Meet founders, VCs, and industry leaders.",
+            date: "April 10, 2025",
+            location: "New York, NY",
+            link: "https://example.com",
+        },
+        {
+            image: Vexacool,
+            tags: ["Business", "Networking"],
+            title: "Startup Connect 2025",
+            description: "Meet founders, VCs, and industry leaders.",
+            date: "April 10, 2025",
+            location: "New York, NY",
+            link: "https://example.com",
+        },
+        {
+            image: Vexacool,
+            tags: ["Business", "Networking"],
+            title: "Startup Connect 2025",
+            description: "Meet founders, VCs, and industry leaders.",
+            date: "April 10, 2025",
+            location: "New York, NY",
+            link: "https://example.com",
+        },
+    ];
     return (
         <div>
             <section className="relative px-36 h-screen flex flex-col justify-center items-center bg-nearBlack">
@@ -20,6 +69,7 @@ const EventsSection: React.FC = () => {
                         <h1 className="text-gradient-reverse">Summits</h1>
                     </div>
                 </div>
+                <EventCarousel events={events} />
             </section>
         </div>
     );
