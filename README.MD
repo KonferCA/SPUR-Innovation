@@ -11,7 +11,7 @@
                                                  
   ![GitHub](https://img.shields.io/github/license/KonferCA/SPUR-Landing?style=flat-square)
   
-  #### The official landing page for SPUR - see [here](https://spuric.com).
+  #### The official landing page for SPUR - see [here](https://innovation.spuric.com).
 </div>
 
 ## Quick Setup :hammer:
@@ -31,7 +31,7 @@ $ npm install -g pnpm
 > Clone the repo
 
 ```sh
-$ git clone https://github.com/KonferCA/Konfer.ca.git
+$ git clone https://github.com/KonferCA/SPUR-Innovation.git
 ```
 
 > From your terminal, navigate to the root path of clone
