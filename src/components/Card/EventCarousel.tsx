@@ -1,3 +1,4 @@
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import React from "react";
 
 type Event = {
@@ -22,14 +23,14 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                 {events.map((event, index) => (
                     <div
                         key={index}
-                        className="flex-shrink-0 w-[300px] sm:w-[350px] md:w-[400px] rounded-lg border border-gray-300 p-4 backdrop-blur-md bg-white/10 shadow-md snap-center"
+                        className="flex-shrink-0 snap-center w-1/4 bg-[#0B1219]/5 backdrop-blur-3xl relative p-8 border border-white/30 rounded-4xl text-white shadow-inner-custom"
                     >
                         {/* Event Image */}
-                        <div className="w-full h-48 rounded-md overflow-hidden">
+                        <div className="w-full h-48 rounded-2xl overflow-hidden">
                             <img
                                 src={event.image}
                                 alt={event.title}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover "
                             />
                         </div>
 
@@ -38,7 +39,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                             {event.tags.map((tag, i) => (
                                 <span
                                     key={i}
-                                    className="bg-blue-600 text-white text-xs font-semibold px-2 py-1 rounded-md"
+                                    className="uppercase bg-radial-[at_-50%_-50%] from-lightSpurOrange to-darkNavy text-spurOrangeText text-xs px-4 py-2 rounded-full"
                                 >
                                     {tag}
                                 </span>
@@ -46,9 +47,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                         </div>
 
                         {/* Title */}
-                        <h3 className="text-lg font-bold mt-3">
-                            {event.title}
-                        </h3>
+                        <h3 className="text-2xl mt-3">{event.title}</h3>
 
                         {/* Description */}
                         <p className="text-sm text-gray-200 mt-2">
@@ -57,7 +56,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
 
                         {/* Date & Location */}
                         <div className="text-sm text-gray-400 mt-3">
-                            <p>{event.date}</p>
+                            <p className="uppercase">{event.date}</p>
                             <p>{event.location}</p>
                         </div>
 
@@ -66,9 +65,10 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                             href={event.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block mt-4 text-blue-400 hover:underline"
+                            className="flex w-fit gap-3 mt-4 uppercase hover:underline font-thin"
                         >
-                            Learn More →
+                            Learn More
+                            <ArrowTopRightIcon width={20} height={20} />
                         </a>
                     </div>
                 ))}
