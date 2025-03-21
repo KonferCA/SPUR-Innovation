@@ -88,3 +88,10 @@ export { SlideDeckComponent } from "./Card/SlideDeck";
  *
  */
 export { Slider } from "./Carousel/Slider";
+
+/*
+ *
+ * @component Event Carousel
+ *
+ */
+export { EventCarousel } from "./Card/EventCarousel";
