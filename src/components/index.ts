@@ -42,6 +42,13 @@ export { InnovationFundSection } from "./sections/InnovationFund.section";
 
 /*
  *
+ * @component Events Section
+ *
+ */
+export { EventsSection } from "./sections/Events.section";
+
+/*
+ *
  * @component InnovationFund Section
  *
  */
@@ -81,3 +88,10 @@ export { SlideDeckComponent } from "./Card/SlideDeck";
  *
  */
 export { Slider } from "./Carousel/Slider";
+
+/*
+ *
+ * @component Event Carousel
+ *
+ */
+export { EventCarousel } from "./Card/EventCarousel";

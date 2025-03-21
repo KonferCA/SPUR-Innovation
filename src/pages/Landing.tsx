@@ -7,6 +7,7 @@ import {
     FooterSection,
     InnovationFundSection,
     PartnersSection,
+    EventsSection,
 } from "@components";
 
 const Landing: React.FC = () => {
@@ -19,6 +20,7 @@ const Landing: React.FC = () => {
                 <ResourcesSection />
                 <MarketplaceSection />
                 <InnovationFundSection />
+                <EventsSection />
                 <PartnersSection />
             </main>
             <FooterSection />
