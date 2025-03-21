@@ -67,6 +67,7 @@ body {
         }
     }
 
+    /* Carousel/Slider Animation (logo slider) */
     .animate-marquee-left {
         animation: marquee-left linear infinite;
     }
@@ -77,5 +78,14 @@ body {
 
     .paused {
         animation-play-state: paused !important;
+    }
+
+    /* Hide Scrollbar */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }
