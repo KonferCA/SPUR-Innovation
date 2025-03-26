@@ -2,7 +2,7 @@ import React from "react";
 import { cn } from "@utils";
 
 type HeaderProps = {
-    size?: "h1" | "h2" | "h3";
+    size?: "h1" | "h2" | "h3" | "h4";
     gradient?: "none" | "left" | "right";
     className?: string;
     children: string;
@@ -10,8 +10,9 @@ type HeaderProps = {
 
 const sizeClassMap: Record<NonNullable<HeaderProps["size"]>, string> = {
     h1: "text-6xl font-light",
-    h2: "text-5xl text-white",
-    h3: "text-xl text-white",
+    h2: "text-5xl font-light text-white",
+    h3: "text-xl font-light text-white",
+    h4: "text-2xl font-light",
 };
 
 const directionClassMap: Record<
@@ -35,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({
     const directionClasses = directionClassMap[gradient];
 
     return (
-        <Tag className={cn("mb-2 inline-block", sizeClasses, className)}>
+        <Tag className={cn("inline-block", sizeClasses, className)}>
             {words.map((word, i) => (
                 <span key={i} className={cn("mr-4", directionClasses)}>
                     {word}
