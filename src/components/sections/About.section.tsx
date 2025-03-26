@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
                             A Community Spurring
                         </Header>
                     </div>
-                    <div className="flex gap-5 -mt-5">
+                    <div className="flex gap-5">
                         <Header size="h1" gradient="left">
                             Innovation and Enterprise
                         </Header>
