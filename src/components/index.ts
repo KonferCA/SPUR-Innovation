@@ -1,97 +1,32 @@
 /*
  *
- * @component Navbar
+ * @component Navbar & Footer
  *
  */
 export { Navbar } from "./Navbar/Navbar";
-
-/*
- *
- * @component Hero Section
- *
- */
-export { HeroSection } from "./sections/Hero.section";
-
-/*
- *
- * @component About Section
- *
- */
-export { AboutSection } from "./sections/About.section";
-
-/*
- *
- * @component Resources Section
- *
- */
-export { ResourcesSection } from "./sections/Resources.section";
-
-/*
- *
- * @component Marketplace Section
- *
- */
-export { MarketplaceSection } from "./sections/Marketplace.section";
-
-/*
- *
- * @component InnovationFund Section
- *
- */
-export { InnovationFundSection } from "./sections/InnovationFund.section";
-
-/*
- *
- * @component Events Section
- *
- */
-export { EventsSection } from "./sections/Events.section";
-
-/*
- *
- * @component InnovationFund Section
- *
- */
-export { PartnersSection } from "./sections/Partners.section";
-
-/*
- *
- * @component Footer
- *
- */
 export { FooterSection } from "./sections/Footer.section";
 
 /*
  *
- * @component Button
+ * @component Landing page Sections
  *
  */
+export { HeroSection } from "./sections/Hero.section";
+export { AboutSection } from "./sections/About.section";
+export { ResourcesSection } from "./sections/Resources.section";
+export { MarketplaceSection } from "./sections/Marketplace.section";
+export { InnovationFundSection } from "./sections/InnovationFund.section";
+export { EventsSection } from "./sections/Events.section";
+export { PartnersSection } from "./sections/Partners.section";
+
+/*
+ *
+ * @component Reusable Components
+ *
+ */
+export { Header } from "./Elements/Header";
 export { Button } from "./Button/Button";
-
-/*
- *
- * @component Card
- *
- */
 export { CardComponent } from "./Card/Card";
-
-/*
- *
- * @component Slide deck
- *
- */
 export { SlideDeckComponent } from "./Card/SlideDeck";
-
-/*
- *
- * @component Slider Carousel
- *
- */
 export { Slider } from "./Carousel/Slider";
-
-/*
- *
- * @component Event Carousel
- *
- */
 export { EventCarousel } from "./Card/EventCarousel";
