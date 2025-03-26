@@ -1,4 +1,4 @@
-import { Button, SlideDeckComponent } from "@components";
+import { Button, Header, SlideDeckComponent } from "@components";
 
 const InnovationFundSection: React.FC = () => {
     return (
@@ -9,11 +9,9 @@ const InnovationFundSection: React.FC = () => {
                     {/* Innovation Fund Details (Left-section) */}
                     <div className="flex flex-col gap-6 justify-end items-start p-20 w-1/2">
                         {/* Title */}
-                        <div className="flex gap-5 leading-relaxed text-6xl">
-                            <h1 className="text-gradient">SPUR</h1>
-                            <h1 className="text-gradient">Innovation</h1>
-                            <h1 className="text-gradient">Fund</h1>
-                        </div>
+                        <Header size="h1" gradient="right">
+                            SPUR Innovation Fund
+                        </Header>
                         {/* Description */}
                         <p>
                             Placerat maecenas aliquam primis duis viverra
@@ -24,7 +22,7 @@ const InnovationFundSection: React.FC = () => {
                         </p>
                         <Button intent="secondary">Learn More</Button>
                         <div className="flex flex-col gap-6 mt-16">
-                            <h1 className="text-5xl">Revenue</h1>
+                            <h1 className="pl-2 text-5xl">Revenue</h1>
                             <h1 className="text-9xl">89%</h1>
                         </div>
                     </div>
