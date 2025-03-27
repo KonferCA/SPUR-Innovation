@@ -22,26 +22,22 @@ const ResourcesSection: React.FC = () => {
 
     return (
         <div>
-            <section className="relative h-screen bg-[#0B1219] to-10%">
-                <div className="absolute top-1/5 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-6xl">
-                    <div className="flex gap-5 leading-relaxed">
-                        <Header size="h1" gradient="right">
-                            Catalysts for
-                        </Header>
-                    </div>
-                    <div className="flex gap-5">
-                        <Header size="h1" gradient="left">
-                            Technological Advancements
-                        </Header>
-                    </div>
-                    <p className="text-center text-lg w-2/3 mt-8">
+            <section className="md:h-screen py-20 px-5 bg-[#0B1219] to-10% flex flex-col justify-center items-center gap-10 md:gap-30">
+                <div className="flex flex-col items-center">
+                    <Header size="h1" gradient="right">
+                        Catalysts for
+                    </Header>
+                    <Header size="h1" gradient="left">
+                        Technological Advancements
+                    </Header>
+                    <p className="text-center text-lg w-full sm:w-2/3 mt-8 px-6">
                         SPUR lorem ipsum odor amet, consectetuer adipiscing
                         elit. Dictum convallis nostra vel dui diam. Curabitur ex
                         nunc quis sit.{" "}
                     </p>
                 </div>
                 {/* Cards (will be converted into a component) */}
-                <div className="absolute top-3/5 left-1/2 transform -translate-x-1/2 w-2/3 flex gap-10">
+                <div className="w-3/4 flex flex-col md:flex-row gap-6 md:gap-10">
                     {cardData.map((card, index) => (
                         <div
                             key={index}
