@@ -6,7 +6,7 @@ import {
     UW_logo,
     WLU_logo,
 } from "@assets";
-import { Button, Slider } from "@components";
+import { Button, Header, Slider } from "@components";
 
 const PartnersSection: React.FC = () => {
     const partners = [
@@ -45,12 +45,9 @@ const PartnersSection: React.FC = () => {
         <div>
             <section className="relative h-screen bg-nearBlack to-10% flex flex-col gap-20 items-center justify-center">
                 <div className="flex flex-col items-center gap-10 text-6xl">
-                    <div className="flex gap-5 leading-relaxed">
-                        <h1 className="text-gradient">Join</h1>
-                        <h1 className="text-gradient">the</h1>
-                        <h1 className="text-gradient">SPUR</h1>
-                        <h1 className="text-gradient">Community</h1>
-                    </div>
+                    <Header size="h1" gradient="right">
+                        Join the SPUR Community
+                    </Header>
                     <p className="text-center text-lg w-2/3">
                         Placerat maecenas aliquam primis duis viverra integer.
                         Vehicula nulla bibendum facilisis per quis vehicula
