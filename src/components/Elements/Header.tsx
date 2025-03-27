@@ -9,8 +9,8 @@ type HeaderProps = {
 };
 
 const sizeClassMap: Record<NonNullable<HeaderProps["size"]>, string> = {
-    h1: "text-6xl font-light",
-    h2: "text-5xl font-light text-white",
+    h1: "text-4xl sm:text-5xl md:text-6xl font-light flex flex-wrap justify-center px-10",
+    h2: "text-3xl sm:text-4xl md:text-5xl font-light text-white",
     h3: "text-xl font-light text-white",
     h4: "text-2xl font-light",
 };
@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({
     const directionClasses = directionClassMap[gradient];
 
     return (
-        <Tag className={cn("inline-block", sizeClasses, className)}>
+        <Tag className={cn("", sizeClasses, className)}>
             {words.map((word, i) => (
                 <span key={i} className={cn("mr-4", directionClasses)}>
                     {word}
