@@ -3,20 +3,20 @@ import { Button, CardComponent, Header } from "@components";
 const MarketplaceSection: React.FC = () => {
     return (
         <div>
-            <section className="relative w-full h-screen bg-gradient-to-tr from-[#F59047]/70 via-[#2C2C2F]/40 to-[#0B1219] flex flex-col md:flex-row justify-center items-center">
-                <div className="flex flex-col justify-between sm:gap-20 lg:gap-32 md:p-42">
+            <section className="relative w-full lg:h-screen bg-gradient-to-tr from-[#F59047]/70 via-[#2C2C2F]/40 to-[#0B1219] flex flex-col lg:flex-row justify-center items-center">
+                <div className="flex flex-col justfiy-center lg:justify-between gap-10 sm:gap-20 lg:gap-32 text-center lg:text-start px-20 py-30 md:py-20 lg:p-25">
                     <div>
                         <Header
                             size="h1"
                             gradient="right"
-                            className="flex justify-center md:justify-start"
+                            className="flex justify-center lg:justify-start "
                         >
                             Onboard by SPUR
                         </Header>
                         <Header
                             size="h1"
                             gradient="left"
-                            className="flex justify-center md:justify-start"
+                            className="flex justify-center lg:justify-start"
                         >
                             Featured Projects
                         </Header>
@@ -30,7 +30,7 @@ const MarketplaceSection: React.FC = () => {
                         <Button intent="secondary">Investment Portal</Button>
                     </div>
                     <div>
-                        <h2 className="text-white">SPUR Innovation Fund</h2>
+                        <Header size="h2" className="text-white mb-4">SPUR Innovation Fund</Header>
                         <p>
                             Placerat maecenas aliquam primis duis viverra
                             integer. Vehicula nulla bibendum facilisis per quis
@@ -41,7 +41,7 @@ const MarketplaceSection: React.FC = () => {
                     </div>
                 </div>
                 {/* Card slide deck */}
-                <div className="relative w-full md:mr-30">
+                <div className="relative w-full lg:mr-30 p-10">
                     <CardComponent />
                 </div>
             </section>
