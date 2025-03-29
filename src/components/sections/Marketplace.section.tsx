@@ -41,7 +41,7 @@ const MarketplaceSection: React.FC = () => {
                     </div>
                 </div>
                 {/* Card slide deck */}
-                <div className="relative w-full lg:mr-30 p-10">
+                <div className="relative w-full lg:mr-30 p-10 lg:p-0">
                     <CardComponent />
                 </div>
             </section>
