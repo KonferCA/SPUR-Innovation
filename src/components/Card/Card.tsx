@@ -64,8 +64,8 @@ const CardComponent: React.FC = () => {
                     alt={activeCard.title}
                     className="w-full h-1/2 object-cover rounded-2xl"
                 />
-                <div className="flex mt-6">
-                    <h2 className="text-4xl flex items-center text-white font-thin mr-6">
+                <div className="flex mt-6 justify-center sm:justify-start">
+                    <h2 className="text-2xl sm:text-4xl flex text-white font-thin mr-2 sm:mr-6 text-center sm:text-start">
                         {activeCard.title}
                     </h2>
                     <ArrowTopRightIcon width={22} height={22} />
@@ -73,10 +73,10 @@ const CardComponent: React.FC = () => {
             </div>
             {/* Description */}
             <div className="mt-3">
-                <p className="text-sm text-white">{activeCard.description} </p>
+                <p className="text-sm text-white text-center sm:text-start">{activeCard.description} </p>
             </div>
             {/* Buttons */}
-            <div className="flex justify-between mt-10">
+            <div className="flex justify-center sm:justify-between flex-wrap gap-2 sm:gap-0 mt-10">
                 <div className="flex items-center justify-center">
                     <button
                         onClick={handlePrev}
