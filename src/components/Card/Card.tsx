@@ -76,8 +76,8 @@ const CardComponent: React.FC = () => {
                 <p className="text-sm text-white text-center sm:text-start">{activeCard.description} </p>
             </div>
             {/* Buttons */}
-            <div className="flex justify-center sm:justify-between flex-wrap gap-2 sm:gap-0 mt-10">
-                <div className="flex items-center justify-center">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-10">
+                <div className="flex items-center order-last sm:order-first">
                     <button
                         onClick={handlePrev}
                         className="px-1 py-1 rounded-lg text-white hover:bg-gray-600 mx-2"
@@ -104,7 +104,7 @@ const CardComponent: React.FC = () => {
                         <CaretRightIcon />
                     </button>
                 </div>
-                <Button intent="secondary">View Project</Button>
+                <Button intent="secondary" className="whitespace-nowrap">View Project</Button>
             </div>
         </div>
     );
