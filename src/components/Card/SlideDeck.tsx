@@ -49,52 +49,61 @@ const SlideDeckComponent: React.FC = () => {
     const activeCard = cards[activeIndex];
 
     return (
-        <div className="flex flex-col p-12 text-white">
-            {/* Image, Title, Description */}
-            <div className="relative flex flex-col h-3/5">
+        <div className="flex flex-col p-8 sm:p-12 text-white">
+            {/* Image */}
+            <div className="relative h-5/6">
                 <img
                     src={activeCard.image}
                     alt={activeCard.title}
                     className="w-full h-full object-cover rounded-2xl"
                 />
-                <div className="flex mt-10 gap-5">
-                    <h2 className="text-4xl flex items-center text-white">
+            </div>
+            {/* Title, Description, Buttons */}
+            <div className="flex flex-col h-full gap-2 justify-between">
+                {/* Title with arrow */}
+                <div className="flex mt-4 lg:mt-6 gap-2 sm:gap-5 justify-center sm:justify-start">
+                    <h2 className="text-2xl sm:text-4xl flex items-center text-white text-center sm:text-start">
                         {activeCard.title}
                     </h2>
                     <ArrowTopRightIcon width={22} height={22} />
                 </div>
-                <p className="text-white mt-5">{activeCard.description} </p>
-            </div>
-            {/* Buttons */}
-            <div className="flex justify-between mt-auto">
-                <div className="flex items-center justify-center">
-                    <button
-                        onClick={handlePrev}
-                        className="px-1 py-1 rounded-lg text-white hover:bg-gray-600 mx-2"
-                    >
-                        <CaretLeftIcon />
-                    </button>
-                    {/* Track Progress - Small Rectangles */}
-                    <div className="flex justify-center space-x-2">
-                        {cards.map((_, index) => (
-                            <div
-                                key={index}
-                                className={`w-4 h-1 rounded-md ${
-                                    index === activeIndex
-                                        ? "bg-spurOrange"
-                                        : "bg-gray-500"
-                                }`}
-                            />
-                        ))}
+                {/* Description */}
+                <p className="text-white mt-1 lg:mt-3 text-center sm:text-start grow">
+                    {activeCard.description}{" "}
+                </p>
+                {/* Buttons */}
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-5 lg:mt-10">
+                    <div className="flex items-center order-last sm:order-first">
+                        <button
+                            onClick={handlePrev}
+                            className="px-1 py-1 rounded-lg text-white hover:bg-gray-600 mx-2"
+                        >
+                            <CaretLeftIcon />
+                        </button>
+                        {/* Track Progress - Small Rectangles */}
+                        <div className="flex justify-center space-x-2">
+                            {cards.map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`w-4 h-1 rounded-md ${
+                                        index === activeIndex
+                                            ? "bg-spurOrange"
+                                            : "bg-gray-500"
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                        <button
+                            onClick={handleNext}
+                            className="px-1 py-1 rounded-lg text-white hover:bg-gray-600 mx-2"
+                        >
+                            <CaretRightIcon />
+                        </button>
                     </div>
-                    <button
-                        onClick={handleNext}
-                        className="px-1 py-1 rounded-lg text-white hover:bg-gray-600 mx-2"
-                    >
-                        <CaretRightIcon />
-                    </button>
+                    <Button intent="secondary" className="whitespace-nowrap">
+                        Learn More
+                    </Button>
                 </div>
-                <Button intent="secondary">Learn More</Button>
             </div>
         </div>
     );
