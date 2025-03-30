@@ -4,7 +4,7 @@ const MarketplaceSection: React.FC = () => {
     return (
         <div>
             <section className="relative w-full lg:h-screen bg-gradient-to-tr from-[#F59047]/70 via-[#2C2C2F]/40 to-[#0B1219] flex flex-col lg:flex-row justify-center items-center">
-                <div className="flex flex-col justfiy-center lg:justify-between gap-10 sm:gap-20 lg:gap-32 text-center lg:text-start px-20 pt-20 pb-10 lg:p-25">
+                <div className="flex flex-col justfiy-center lg:justify-between gap-10 sm:gap-20 lg:gap-30 text-center lg:text-start px-20 pt-20 pb-10 lg:ml-10 lg:p-25">
                     <div>
                         <Header
                             size="h1"
