@@ -9,7 +9,7 @@ type HeaderProps = {
 };
 
 const sizeClassMap: Record<NonNullable<HeaderProps["size"]>, string> = {
-    h1: "text-4xl sm:text-5xl md:text-6xl font-light flex flex-wrap justify-center px-10",
+    h1: "text-4xl sm:text-5xl md:text-6xl font-light flex flex-wrap justify-center",
     h2: "text-3xl sm:text-4xl md:text-5xl font-light text-white",
     h3: "text-xl font-light text-white",
     h4: "text-2xl font-light",
