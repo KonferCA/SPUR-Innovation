@@ -5,7 +5,7 @@ const AboutSection: React.FC = () => {
     return (
         <div>
             <section className="relative h-screen bg-[#050B10] to-10%">
-                <div className="flex flex-col items-center pt-20 px-0 sm:px-10">
+                <div className="flex flex-col items-center pt-20 px-10">
                     <Header size="h1" gradient="right">
                         A Community Spurring
                     </Header>
