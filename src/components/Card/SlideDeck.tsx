@@ -51,7 +51,7 @@ const SlideDeckComponent: React.FC = () => {
     return (
         <div className="flex flex-col p-8 sm:p-12 text-white">
             {/* Image */}
-            <div className="relative h-5/6">
+            <div className="relative h-5/6 xl:max-h-4/6">
                 <img
                     src={activeCard.image}
                     alt={activeCard.title}
