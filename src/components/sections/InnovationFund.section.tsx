@@ -7,7 +7,7 @@ const InnovationFundSection: React.FC = () => {
                 {/* Slide Deck Card */}
                 <div className="flex flex-col lg:flex-row w-full justify-between items-center max-w-8xl lg:h-[85vh] bg-nearBlack/5 backdrop-blur-3xl mx-auto border-1 border-white/30 rounded-4xl text-white shadow-inner-custom">
                     {/* Innovation Fund Details (Left-section) */}
-                    <div className="flex flex-col justify-center lg:justify-end items-center lg:items-start gap-6 text-center lg:text-start p-10 lg:pl-15 xl:p-15 lg:w-1/2">
+                    <div className="flex flex-col justify-center lg:justify-end items-center lg:items-start gap-6 text-center lg:text-start p-10 w-full lg:w-1/2">
                         {/* Title */}
                         <Header
                             size="h1"
@@ -17,7 +17,7 @@ const InnovationFundSection: React.FC = () => {
                             SPUR Innovation Fund
                         </Header>
                         {/* Description */}
-                        <p>
+                        <p className="max-w-xl">
                             Placerat maecenas aliquam primis duis viverra
                             integer. Vehicula nulla bibendum facilisis per quis
                             vehicula risus donec euismod. Curabitur aliquet sem
