@@ -3,6 +3,8 @@ import {
     ArrowTopRightIcon,
     CaretLeftIcon,
     CaretRightIcon,
+    ClockIcon,
+    SewingPinIcon,
 } from "@radix-ui/react-icons";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -48,7 +50,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
     const isAtEnd = activeIndex + visibleCount >= events.length;
 
     return (
-        <div className="relative flex items-center justify-center xl:px-20 pt-10 lg:pb-24">
+        <div className="relative flex items-center justify-center xl:px-30 pt-10 lg:pb-24">
             <button
                 onClick={handlePrev}
                 disabled={isAtStart}
@@ -68,16 +70,16 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -40 }}
                     transition={{ duration: 0.4 }}
-                    className="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar px-4 py-6"
+                    className="flex items-stretch gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar px-4 py-6"
                 >
                     {activeCardSet.map((event, index) => (
                         // Each Event
                         <div
                             key={index}
-                            className="relative h-full bg-nearBlack/5 backdrop-blur-3xl p-8 border border-white/30 rounded-4xl text-white shadow-inner-custom"
+                            className="relative flex flex-col justify-between h-full bg-nearBlack/5 backdrop-blur-3xl p-8 border border-white/30 rounded-4xl text-white shadow-inner-custom"
                         >
                             {/* Event Image */}
-                            <div className="w-full h-1/2 rounded-2xl overflow-hidden">
+                            <div className="w-full h-1/2 max-h-96 rounded-2xl overflow-hidden">
                                 <img
                                     src={event.image}
                                     alt={event.title}
@@ -98,7 +100,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-lg xl:text-2xl mt-3">
+                            <h3 className="text-lg md:text-2xl mt-3">
                                 {event.title}
                             </h3>
 
@@ -108,9 +110,15 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                             </p>
 
                             {/* Date & Location */}
-                            <div className="text-sm text-gray-400 mt-3">
-                                <p className="uppercase">{event.date}</p>
-                                <p>{event.location}</p>
+                            <div className="flex flex-col gap-4 text-sm text-gray-400 mt-3">
+                                <div className="flex gap-5 items-center">
+                                    <ClockIcon width={20} height={20} />
+                                    <p className="uppercase">{event.date}</p>
+                                </div>
+                                <div className="flex gap-5 items-center">
+                                    <SewingPinIcon width={20} height={20} />
+                                    <p>{event.location}</p>
+                                </div>
                             </div>
 
                             {/* Event Link */}
