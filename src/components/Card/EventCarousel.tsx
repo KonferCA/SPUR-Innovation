@@ -1,4 +1,4 @@
-import { cn } from "@utils";
+import { cn, useMediaQuery } from "@utils";
 import {
     ArrowTopRightIcon,
     CaretLeftIcon,
@@ -22,11 +22,13 @@ type EventCarouselProps = {
 };
 
 const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
+    const isLarge = useMediaQuery("(min-width: 1024px)");
+    const visibleCount = isLarge ? 3 : 1;
     const [activeIndex, setActiveIndex] = useState(0);
 
     // Move to next group if there's room
     const handleNext = () => {
-        if (activeIndex + 3 < events.length) {
+        if (activeIndex + visibleCount < events.length) {
             setActiveIndex((prevIndex) => prevIndex + 1);
         }
     };
@@ -39,14 +41,14 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
     };
 
     // Show up to 3 cards
-    const activeCardSet = events.slice(activeIndex, activeIndex + 3);
+    const activeCardSet = events.slice(activeIndex, activeIndex + visibleCount);
 
     // Set buttons disabled state
     const isAtStart = activeIndex === 0;
-    const isAtEnd = activeIndex + 3 >= events.length;
+    const isAtEnd = activeIndex + visibleCount >= events.length;
 
     return (
-        <div className="relative flex items-center justify-center xl:px-30 pt-10 lg:pb-24">
+        <div className="relative flex items-center justify-center xl:px-20 pt-10 lg:pb-24">
             <button
                 onClick={handlePrev}
                 disabled={isAtStart}
@@ -96,7 +98,9 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                             </div>
 
                             {/* Title */}
-                            <h3 className="text-2xl mt-3">{event.title}</h3>
+                            <h3 className="text-lg xl:text-2xl mt-3">
+                                {event.title}
+                            </h3>
 
                             {/* Description */}
                             <p className="text-sm text-gray-200 mt-2">
