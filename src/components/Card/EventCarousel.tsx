@@ -46,7 +46,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
     const isAtEnd = activeIndex + 3 >= events.length;
 
     return (
-        <div className="relative flex items-center justify-center px-30 pt-10 pb-24">
+        <div className="relative flex items-center justify-center xl:px-30 pt-10 lg:pb-24">
             <button
                 onClick={handlePrev}
                 disabled={isAtStart}
