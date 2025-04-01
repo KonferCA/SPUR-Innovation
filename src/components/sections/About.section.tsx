@@ -5,7 +5,7 @@ const AboutSection: React.FC = () => {
     return (
         <div>
             <section className="relative h-screen bg-[#050B10] to-10%">
-                <div className="flex flex-col items-center pt-20 px-10">
+                <div className="flex flex-col items-center pt-40 lg:pt-20 px-0 sm:px-10">
                     <Header size="h1" gradient="right">
                         A Community Spurring
                     </Header>
@@ -14,17 +14,17 @@ const AboutSection: React.FC = () => {
                     </Header>
                 </div>
                 <img
-                    className="absolute top-50 sm:top-30 md:-top-8"
+                    className="absolute top-60 lg:top-0"
                     src={HalfEllipse}
                 />
-                <div className="absolute top-1/2 md:top-7/12 left-1/2 transform -translate-x-1/2 flex flex-col md:flex-row w-2/3">
+                <div className="absolute top-1/2 lg:top-7/12 left-1/2 transform -translate-x-1/2 flex flex-col lg:flex-row w-2/3">
                     <Header
                         size="h2"
-                        className="w-full text-center md:text-end md:pr-10 pt-4 mb-4"
+                        className="w-full text-center lg:text-end lg:pr-10 pt-4 mb-4"
                     >
                         Our Mandate
                     </Header>
-                    <div className="flex flex-col items-center md:items-start text-center md:text-left md:px-10 ">
+                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left md:px-10 ">
                         <p className="mb-6">
                             Placerat maecenas aliquam primis duis viverra
                             integer. Vehicula nulla bibendum facilisis per quis
