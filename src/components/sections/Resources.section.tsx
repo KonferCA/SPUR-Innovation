@@ -22,7 +22,7 @@ const ResourcesSection: React.FC = () => {
 
     return (
         <div>
-            <section className="md:h-screen py-20 px-5 bg-[#0B1219] to-10% flex flex-col justify-center items-center gap-10 md:gap-30">
+            <section className="lg:h-screen py-20 px-5 bg-[#0B1219] to-10% flex flex-col justify-center items-center gap-10 md:gap-30">
                 <div className="flex flex-col items-center">
                     <Header size="h1" gradient="right">
                         Catalysts for
@@ -37,7 +37,7 @@ const ResourcesSection: React.FC = () => {
                     </p>
                 </div>
                 {/* Cards (will be converted into a component) */}
-                <div className="w-3/4 flex flex-col md:flex-row gap-6 md:gap-10">
+                <div className="w-5/6 xl:w-3/4 flex flex-col lg:flex-row gap-6 xl:gap-10">
                     {cardData.map((card, index) => (
                         <div
                             key={index}
