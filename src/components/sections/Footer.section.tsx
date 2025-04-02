@@ -57,22 +57,40 @@ const FooterSection: React.FC = () => {
                 {/* Logo & Copyright statement */}
                 <div className="flex flex-col gap-10 xl:gap-0 xl:flex-row justify-center xl:justify-between items-center xl:items-start pt-24">
                     <div className="flex gap-5 items-end">
-                        <LinkedInLogoIcon
-                            width={32}
-                            height={32}
-                            color="#969CA1"
-                            className="hover:cursor-pointer hover:scale-110"
-                        />
-                        <InstagramLogoIcon
-                            width={32}
-                            height={32}
-                            color="#969CA1"
-                            className="hover:cursor-pointer hover:scale-110"
-                        />
-                        <img
-                            src={xLogo}
-                            className="w-8 hover:cursor-pointer hover:scale-110"
-                        />
+                        <a
+                            href="https://linkedin.com/company/spur-innovation-center/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <LinkedInLogoIcon
+                                width={32}
+                                height={32}
+                                color="#969CA1"
+                                className="hover:cursor-pointer hover:scale-110"
+                            />
+                        </a>
+                        <a
+                            href="https://instagram.com/spur_innovation/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <InstagramLogoIcon
+                                width={32}
+                                height={32}
+                                color="#969CA1"
+                                className="hover:cursor-pointer hover:scale-110"
+                            />
+                        </a>
+                        <a
+                            href="https://instagram.com/spur_innovation/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={xLogo}
+                                className="w-8 hover:cursor-pointer hover:scale-110"
+                            />
+                        </a>
                     </div>
                     <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-start gap-4 lg:gap-16 text-center xl:text-start">
                         <p>
