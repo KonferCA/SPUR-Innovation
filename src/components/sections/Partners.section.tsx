@@ -43,8 +43,8 @@ const PartnersSection: React.FC = () => {
     ];
     return (
         <div>
-            <section className="relative h-screen bg-nearBlack to-10% flex flex-col gap-20 items-center justify-center">
-                <div className="flex flex-col items-center gap-10 text-6xl">
+            <section className="relative h-screen bg-nearBlack to-10% flex flex-col gap-10 md:gap-20 items-center justify-center">
+                <div className="flex flex-col items-center gap-10 text-6xl px-10 md:px-6 lg:px-0">
                     <Header size="h1" gradient="right">
                         Join the SPUR Community
                     </Header>
@@ -55,9 +55,11 @@ const PartnersSection: React.FC = () => {
                         lacinia.
                     </p>
                 </div>
-                <div className="flex gap-10 w-fit">
+                <div className="flex flex-col items-center md:flex-row gap-5 md:gap-10 w-fit">
                     <Button intent="tertiary">Become a partner</Button>
-                    <Button intent="secondary">Contact us</Button>
+                    <Button intent="secondary" className="w-fit">
+                        Contact us
+                    </Button>
                 </div>
                 <Slider
                     speed={25}
