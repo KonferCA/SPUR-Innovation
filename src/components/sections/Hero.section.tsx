@@ -84,17 +84,40 @@ const HeroSection: React.FC = () => {
                         <DoubleArrowDownIcon width={16} height={16} />
                     </div>
                     <div className="flex gap-5 w-1/3 justify-end items-end pr-14 pb-14">
-                        <LinkedInLogoIcon
-                            width={32}
-                            height={32}
-                            color="#969CA1"
-                        />
-                        <InstagramLogoIcon
-                            width={32}
-                            height={32}
-                            color="#969CA1"
-                        />
-                        <img src={xLogo} className="w-8" />
+                        <a
+                            href="https://linkedin.com/company/spur-innovation-center/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <LinkedInLogoIcon
+                                width={32}
+                                height={32}
+                                color="#969CA1"
+                                className="hover:cursor-pointer hover:scale-110"
+                            />
+                        </a>
+                        <a
+                            href="https://instagram.com/spur_innovation/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <InstagramLogoIcon
+                                width={32}
+                                height={32}
+                                color="#969CA1"
+                                className="hover:cursor-pointer hover:scale-110"
+                            />
+                        </a>
+                        <a
+                            href="https://instagram.com/spur_innovation/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={xLogo}
+                                className="w-8 hover:cursor-pointer hover:scale-110"
+                            />
+                        </a>
                     </div>
                 </div>
             </section>
