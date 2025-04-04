@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
                 {/* 4 Headers */}
                 <div className="relative flex flex-col lg:flex-row justify-center items-center sm:px-10">
                     {/* Top headers */}
-                    <div className="lg:absolute lg:top-12 xl:top-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-3xl sm:text-4xl lg:text-6xl xl:text-8xl w-full flex flex-wrap lg:flex-nowrap justify-center gap-2 sm:gap-10">
+                    <div className="lg:absolute lg:top-9 xl:top-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-3xl sm:text-4xl lg:text-7xl xl:text-8xl w-full flex flex-wrap lg:flex-nowrap justify-center gap-2 sm:gap-10">
                         <h1 className="lg:text-right">
                             <span className="inline-block text-gradient">
                                 Innovative
@@ -26,13 +26,13 @@ const HeroSection: React.FC = () => {
                         </h1>
                     </div>
                     {/* Bottom headers */}
-                    <div className="pb-10 -mt-2 lg:-mt-1 lg:absolute lg:top-20 xl:top-12 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-3xl sm:text-4xl lg:text-6xl xl:text-8xl w-full flex flex-wrap lg:flex-nowrap justify-center gap-0 sm:gap-40 lg:gap-50 xl:gap-72">
-                        <h1 className="lg:text-right absolute right-[60%] lg:right-7/12">
+                    <div className="pb-10 -mt-2 lg:-mt-1 lg:absolute lg:top-18 xl:top-12 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-3xl sm:text-4xl lg:text-7xl xl:text-8xl w-full flex flex-wrap lg:flex-nowrap justify-center gap-0 sm:gap-40 lg:gap-50 xl:gap-72">
+                        <h1 className="lg:text-right absolute right-[60%] lg:right-[61%] xl:right-7/12">
                             <span className="lg:leading-relaxed inline-block text-gradient-reverse">
                                 Strategic
                             </span>
                         </h1>
-                        <h1 className="lg:text-left absolute left-[56%] lg:left-7/12">
+                        <h1 className="lg:text-left absolute left-[56%] lg:left-[61%] xl:left-7/12">
                             <span className="lg:leading-relaxed inline-block text-gradient-reverse">
                                 Advantages
                             </span>
@@ -40,9 +40,9 @@ const HeroSection: React.FC = () => {
                     </div>
                 </div>
                 {/* Stats and Building */}
-                <div className="flex flex-col lg:flex-row items-center w-full">
+                <div className="flex flex-col lg:flex-row items-center lg:justify-center w-full">
                     {/* subdiv: left callout */}
-                    <div className="flex flex-col items-center lg:items-end gap-5 px-10 lg:px-5 py-5">
+                    <div className="flex flex-col items-center lg:items-end gap-5 px-10 lg:px-5 py-5 xl:max-w-lg">
                         <p className="text-center lg:text-right text-lg xl:text-2xl">
                             Advanced solutions for technology and
                             innovation-focused companies
@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
                         <Button intent="secondary">Learn more</Button>
                     </div>
                     {/* subdiv: building image */}
-                    <div className="w-3/4 lg:w-full max-w-[600px] 2xl:w-1/2 justify-center z-20">
+                    <div className="w-3/4 lg:w-full max-w-[650px] 2xl:w-1/2 justify-center z-20">
                         <img
                             src={SpurBuilding}
                             className="w-full"
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
                         />
                     </div>
                     {/* subdiv: right stats */}
-                    <div className="flex flex-col items-center lg:items-start gap-5 text-center lg:text-start px-10 lg:px-5 py-5">
+                    <div className="flex flex-col items-center lg:items-start gap-3 2xl:gap-5 text-center lg:text-start px-10 lg:px-5 py-5 xl:max-w-lg">
                         <div>
                             <p className="font-thin">
                                 Companies utilizing resources
