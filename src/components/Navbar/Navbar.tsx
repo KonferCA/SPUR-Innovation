@@ -32,12 +32,8 @@ const Navbar: React.FC = () => {
                             Partners
                         </a>
                         <div className="flex flex-col gap-2 mt-4">
-                            <Button newtab intent="primary">
-                                Investor Portal
-                            </Button>
-                            <Button newtab intent="primary">
-                                Let's talk
-                            </Button>
+                            <Button intent="primary">Investor Portal</Button>
+                            <Button intent="primary">Let's talk</Button>
                         </div>
                     </motion.div>
                 )}
@@ -71,12 +67,8 @@ const Navbar: React.FC = () => {
 
                 {/* Desktop Buttons */}
                 <div className="hidden md:flex gap-x-5">
-                    <Button newtab intent="primary">
-                        Investor Portal
-                    </Button>
-                    <Button newtab intent="primary">
-                        Let's talk
-                    </Button>
+                    <Button intent="primary">Investor Portal</Button>
+                    <Button intent="primary">Let's talk</Button>
                 </div>
             </div>
         </header>
