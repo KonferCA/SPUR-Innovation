@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Geist", sans-serif;
 }
@@ -19,6 +23,9 @@ body {
     }
     p {
         @apply text-white font-thin;
+    }
+    a {
+        @apply hover:scale-110;
     }
 }
 
