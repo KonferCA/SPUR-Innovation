@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
                 {/* Stats and Building */}
                 <div className="flex flex-col lg:flex-row items-center lg:justify-center w-full">
                     {/* subdiv: left callout */}
-                    <div className="flex flex-col items-center lg:items-end gap-5 px-10 lg:px-5 py-5 xl:max-w-lg">
+                    <div className="order-2 lg:order-1 flex flex-col items-center lg:items-end gap-2 px-10 lg:px-5 py-5 xl:max-w-lg">
                         <p className="text-center lg:text-right text-lg xl:text-2xl">
                             Advanced solutions for technology and
                             innovation-focused companies
@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
                         <Button intent="secondary">Learn more</Button>
                     </div>
                     {/* subdiv: building image */}
-                    <div className="w-3/4 lg:w-full max-w-[650px] 2xl:w-1/2 justify-center z-20">
+                    <div className="order-1 lg:order-2 w-3/4 lg:w-full max-w-[650px] 2xl:w-1/2 justify-center z-20">
                         <img
                             src={SpurBuilding}
                             className="w-full"
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
                         />
                     </div>
                     {/* subdiv: right stats */}
-                    <div className="flex flex-col items-center lg:items-start gap-3 2xl:gap-5 text-center lg:text-start px-10 lg:px-5 py-5 xl:max-w-lg">
+                    <div className="order-3 flex flex-col items-center lg:items-start gap-3 2xl:gap-5 text-center lg:text-start px-10 lg:px-5 py-5 xl:max-w-lg">
                         <div>
                             <p className="font-thin">
                                 Companies utilizing resources
