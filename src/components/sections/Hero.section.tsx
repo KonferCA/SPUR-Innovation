@@ -47,7 +47,13 @@ const HeroSection: React.FC = () => {
                             Advanced solutions for technology and
                             innovation-focused companies
                         </p>
-                        <Button intent="secondary">Learn more</Button>
+                        <Button
+                            intent="secondary"
+                            link="https://capital.spuric.com/"
+                            newtab
+                        >
+                            Learn more
+                        </Button>
                     </div>
                     {/* subdiv: building image */}
                     <div className="order-1 lg:order-2 w-3/4 lg:w-full max-w-[650px] 2xl:w-1/2 justify-center z-20">
@@ -88,7 +94,9 @@ const HeroSection: React.FC = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 items-center lg:w-1/3 lg:self-start">
-                        <Button intent="tertiary">Get started</Button>
+                        <Button intent="tertiary" link="#partners">
+                            Get started
+                        </Button>
                         <DoubleArrowDownIcon width={16} height={16} />
                     </div>
                     <div className="flex gap-5 lg:w-1/3 lg:justify-end lg:self-end lg:pr-10">
