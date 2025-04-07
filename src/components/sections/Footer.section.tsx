@@ -19,10 +19,10 @@ const FooterSection: React.FC = () => {
                             >
                                 About
                             </Header>
-                            <a href="/coming-soon">Our Story</a>
-                            <a href="/coming-soon">Resources</a>
-                            <a href="/coming-soon">News</a>
-                            <a href="/coming-soon">Partners</a>
+                            <a href="#about">Our Story</a>
+                            <a href="#resources">Resources</a>
+                            <a href="#news">News</a>
+                            <a href="#partners">Partners</a>
                         </div>
                         <div className="flex flex-col gap-2">
                             <Header
