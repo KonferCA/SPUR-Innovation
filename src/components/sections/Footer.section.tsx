@@ -32,9 +32,19 @@ const FooterSection: React.FC = () => {
                             >
                                 Contact
                             </Header>
-                            <a href="/coming-soon">Join SPUR</a>
-                            <a href="/coming-soon">Become a Partner</a>
-                            <a href="/coming-soon">Contact Us</a>
+                            <a
+                                href="https://onboard.spuric.com/"
+                                target="_blank"
+                            >
+                                Join SPUR
+                            </a>
+                            <a
+                                href="https://capital.spuric.com/partners"
+                                target="_blank"
+                            >
+                                Become a Partner
+                            </a>
+                            <a href="mailto:info@spuric.com">Contact Us</a>
                         </div>
                     </div>
                     {/* Mailing List */}

@@ -7,6 +7,18 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const investorButton = (
+        <Button intent="primary" link="https://onboard.spuric.com/" newtab>
+            Investor Portal
+        </Button>
+    );
+
+    const letsTalkButton = (
+        <Button intent="primary" link="mailto:info@spuric.com">
+            Let's talk
+        </Button>
+    );
+
     return (
         <header className="fixed w-full z-50">
             {/* Mobile Menu (only shown when open) */}
@@ -32,8 +44,8 @@ const Navbar: React.FC = () => {
                             Partners
                         </a>
                         <div className="flex flex-col gap-2 mt-4">
-                            <Button intent="primary">Investor Portal</Button>
-                            <Button intent="primary">Let's talk</Button>
+                            {investorButton}
+                            {letsTalkButton}
                         </div>
                     </motion.div>
                 )}
@@ -67,8 +79,8 @@ const Navbar: React.FC = () => {
 
                 {/* Desktop Buttons */}
                 <div className="hidden md:flex gap-x-5">
-                    <Button intent="primary">Investor Portal</Button>
-                    <Button intent="primary">Let's talk</Button>
+                    {investorButton}
+                    {letsTalkButton}
                 </div>
             </div>
         </header>
