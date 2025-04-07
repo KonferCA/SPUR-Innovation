@@ -56,8 +56,18 @@ const PartnersSection: React.FC = () => {
                     </p>
                 </div>
                 <div className="flex flex-col items-center md:flex-row gap-5 md:gap-10 w-fit">
-                    <Button intent="tertiary">Become a partner</Button>
-                    <Button intent="secondary" className="w-fit">
+                    <Button
+                        intent="tertiary"
+                        link="https://capital.spuric.com/partners"
+                        newtab
+                    >
+                        Become a partner
+                    </Button>
+                    <Button
+                        intent="secondary"
+                        link="mailto:info@spuric.com"
+                        className="w-fit"
+                    >
                         Contact us
                     </Button>
                 </div>
