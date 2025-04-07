@@ -15,13 +15,27 @@ const Landing: React.FC = () => {
         <div className="bg-[#050B10] transition ease-in">
             <Navbar />
             <main>
-                <HeroSection />
-                <AboutSection />
-                <ResourcesSection />
-                <MarketplaceSection />
-                <InnovationFundSection />
-                <EventsSection />
-                <PartnersSection />
+                <div id="hero">
+                    <HeroSection />
+                </div>
+                <div id="about">
+                    <AboutSection />
+                </div>
+                <div id="resources">
+                    <ResourcesSection />
+                </div>
+                <div id="marketplace">
+                    <MarketplaceSection />
+                </div>
+                <div id="innovationfund">
+                    <InnovationFundSection />
+                </div>
+                <div id="news">
+                    <EventsSection />
+                </div>
+                <div id="partners">
+                    <PartnersSection />
+                </div>
             </main>
             <FooterSection />
         </div>
