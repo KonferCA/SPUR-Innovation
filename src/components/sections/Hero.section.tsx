@@ -27,12 +27,12 @@ const HeroSection: React.FC = () => {
                     </div>
                     {/* Bottom headers */}
                     <div className="pb-10 -mt-2 lg:-mt-1 lg:absolute lg:top-18 xl:top-14 2xl:top-16 lg:left-1/2 lg:transform lg:-translate-x-1/2 text-3xl sm:text-4xl lg:text-7xl xl:text-7xl 2xl:text-8xl w-full flex flex-wrap lg:flex-nowrap justify-center gap-0 sm:gap-40 lg:gap-50 xl:gap-72">
-                        <h1 className="lg:text-right absolute right-[60%] lg:right-[61%] xl:right-[60%] 2xl:right-7/12">
+                        <h1 className="lg:text-right absolute right-[60%] lg:right-[61%] xl:right-[60%] 2xl:[62%]">
                             <span className="lg:leading-relaxed inline-block text-gradient-reverse">
                                 Strategic
                             </span>
                         </h1>
-                        <h1 className="lg:text-left absolute left-[56%] lg:left-[61%] xl:left-[60%] 2xl:left-7/12">
+                        <h1 className="lg:text-left absolute left-[56%] lg:left-[61%] xl:left-[60%] 2xl:[62%]">
                             <span className="lg:leading-relaxed inline-block text-gradient-reverse">
                                 Advantages
                             </span>
