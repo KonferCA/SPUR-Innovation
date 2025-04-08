@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.25 }}
-                        className="md:hidden absolute top-0 left-0 w-full bg-nearBlack/95 px-10 py-6 pt-20 pb-10 flex flex-col justify-center items-center gap-2 shadow-md"
+                        className="md:hidden absolute top-0 left-0 w-full bg-nearBlack/95 py-6 pt-20 pb-10 flex flex-col justify-center items-center gap-2 shadow-md"
                     >
                         <a href="#about" onClick={() => setMenuOpen(false)}>
                             About us
