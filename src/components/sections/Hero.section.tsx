@@ -125,7 +125,7 @@ const HeroSection: React.FC = () => {
                             />
                         </a>
                         <a
-                            href="https://instagram.com/spur_innovation/"
+                            href="https://x.com/SpurInnovation"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
