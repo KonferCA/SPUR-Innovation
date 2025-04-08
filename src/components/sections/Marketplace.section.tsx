@@ -27,10 +27,18 @@ const MarketplaceSection: React.FC = () => {
                             tristique, nibh velit suscipit nulla, sit amet
                             suscipit diam magna ut nunc.
                         </p>
-                        <Button intent="secondary">Investment Portal</Button>
+                        <Button
+                            intent="secondary"
+                            link="https://onboard.spuric.com/"
+                            newtab
+                        >
+                            Investment Portal
+                        </Button>
                     </div>
                     <div>
-                        <Header size="h2" className="text-white mb-4">SPUR Innovation Fund</Header>
+                        <Header size="h2" className="text-white mb-4">
+                            SPUR Innovation Fund
+                        </Header>
                         <p>
                             Placerat maecenas aliquam primis duis viverra
                             integer. Vehicula nulla bibendum facilisis per quis

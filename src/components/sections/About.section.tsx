@@ -32,7 +32,13 @@ const AboutSection: React.FC = () => {
                             vel fermentum lacinia. Aliquam sodales neque lorem,
                             aliquam luctus tellus viverra ut.
                         </p>
-                        <Button intent="secondary">Learn more</Button>
+                        <Button
+                            intent="secondary"
+                            link="https://capital.spuric.com/"
+                            newtab
+                        >
+                            Learn more
+                        </Button>
                     </div>
                 </div>
             </section>
