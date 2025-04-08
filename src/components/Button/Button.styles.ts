@@ -9,7 +9,7 @@ import { twMerge } from "tailwind-merge";
  */
 const buttonStyles = cva(
     [
-        "hover:cursor-pointer hover:scale-100 rounded-full text-sm",
+        "hover:cursor-pointer hover:scale-100 rounded-full text-sm text-center",
         "disabled:cursor-not-allowed disabled:opacity-50",
     ],
     {
