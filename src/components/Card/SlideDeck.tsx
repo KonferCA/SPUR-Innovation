@@ -14,8 +14,7 @@ const SlideDeckComponent: React.FC = () => {
         {
             id: 1,
             title: "This Company Inc.",
-            description:
-                "Placerat maecenas aliquam primis duis viverra integer. Vehicula nulla bibendum facilisis per quis vehicula risus donec euismod. Curabitur aliquet sem vel fermentum lacinia. Aliquam sodales neque lorem, aliquam luctus tellus viverra ut.",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
             image: Vexacool,
         },
         {

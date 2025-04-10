@@ -6,18 +6,18 @@ const ResourcesSection: React.FC = () => {
         {
             title: "Investments & Funding",
             description:
-                "Placerat maecenas aliquam primis duis viverra integer. Vehicula nulla bibendum facilisis per quis vehicula risus donec euismod.",
-        },
-        {
-            title: "AI-Driven Data Centers",
-            description:
-                "Placerat maecenas aliquam primis duis viverra integer. Vehicula nulla bibendum facilisis per quis vehicula risus donec euismod.",
+                "SPUR manages a growing portfolio of data center assets, delivering exceptional value through strategic acquisitions. Our growth strategy combines disciplined capital allocation with technical expertise, allowing us to deliver exceptional returns for our investors while meeting the growing demand for advanced computing infrastructure.",
         },
         {
             title: "Office Spaces",
             description:
-                "Placerat maecenas aliquam primis duis viverra integer. Vehicula nulla bibendum facilisis per quis vehicula risus donec euismod.",
+                "SPUR offers private and co-share office spaces across Canada’s leading tech hubs, including the Waterloo Region. Our locations are strategically positioned near major universities, colleges, and industry leaders like Google, Toyota, and OpenText. Designed for startups and established companies alike, our spaces provide access to cutting-edge infrastructure, vibrant communities, and essential amenities such as 24/7 access, conference rooms, high-speed internet, and more. With convenient access to public transportation and nearby commercial districts, SPUR office spaces are the perfect environment to foster innovation and collaboration.",
         },
+        {
+            title: "AI-Driven Data Centers",
+            description:
+                "Strategic presence across major Canadian tech hubs, providing state-of-the-art facilities and infrastructure. SPUR's data centers are strategically located in Canada's technology corridors, offering clients access to reliable infrastructure, renewable energy sources, and optimal connectivity with minimal latency.",
+        }
     ];
 
     return (
@@ -31,9 +31,7 @@ const ResourcesSection: React.FC = () => {
                         Technological Advancements
                     </Header>
                     <p className="text-center text-lg w-full sm:w-2/3 mt-8 px-6">
-                        SPUR lorem ipsum odor amet, consectetuer adipiscing
-                        elit. Dictum convallis nostra vel dui diam. Curabitur ex
-                        nunc quis sit.{" "}
+                        SPUR is pioneering the next generation of sustainable, scalable AI and quantum computing infrastructure.
                     </p>
                 </div>
                 {/* Cards (will be converted into a component) */}

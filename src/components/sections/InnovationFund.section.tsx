@@ -18,11 +18,8 @@ const InnovationFundSection: React.FC = () => {
                         </Header>
                         {/* Description */}
                         <p className="max-w-xl">
-                            Placerat maecenas aliquam primis duis viverra
-                            integer. Vehicula nulla bibendum facilisis per quis
-                            vehicula risus donec euismod. Curabitur aliquet sem
-                            vel fermentum lacinia. Aliquam sodales neque lorem,
-                            aliquam luctus tellus viverra ut.
+                            The SPUR Innovation Fund empowers students, developers, and entrepreneurs to bring their world-changing ideas to life.
+                            Apply for funding and turn your vision into reality with the support of a community dedicated to driving innovation and impact.
                         </p>
                         <Button
                             intent="secondary"

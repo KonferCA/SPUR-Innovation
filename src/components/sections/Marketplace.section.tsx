@@ -13,39 +13,23 @@ const MarketplaceSection: React.FC = () => {
                         >
                             Onboard by SPUR
                         </Header>
-                        <Header
+                        {/* <Header
                             size="h1"
                             gradient="left"
                             className="flex justify-center lg:justify-start"
                         >
                             Featured Projects
-                        </Header>
-                        <p className="my-10">
-                            SPUR lorem ipsum odor amet, consectetuer adipiscing
-                            elit. Dictum convallis nostra vel dui diam.
-                            Curabitur ex nunc quis sit. Itc vitae feugiat
-                            tristique, nibh velit suscipit nulla, sit amet
-                            suscipit diam magna ut nunc.
+                        </Header> */}
+                        <p className="my-10 text-pretty">
+                            Launching a startup? Looking for freelance work? Onboard by SPUR is a community-driven platform that connects startups with talented individuals and freelancers. Our mission is to foster innovation and collaboration by providing a space where ideas can flourish and partnerships can thrive. Whether you're a startup seeking talent or an individual looking for exciting opportunities, Onboard by SPUR is here to help you succeed. Onboard by SPUR features a blockchain‑based marketplace platform for investors, featuring secure document review workflows and  direct funding capabilities.
                         </p>
                         <Button
                             intent="secondary"
                             link="https://onboard.spuric.com/"
                             newtab
                         >
-                            Investment Portal
+                            Onboard By SPUR
                         </Button>
-                    </div>
-                    <div>
-                        <Header size="h2" className="text-white mb-4">
-                            SPUR Innovation Fund
-                        </Header>
-                        <p>
-                            Placerat maecenas aliquam primis duis viverra
-                            integer. Vehicula nulla bibendum facilisis per quis
-                            vehicula risus donec euismod. Curabitur aliquet sem
-                            vel fermentum lacinia. Aliquam sodales neque lorem,
-                            aliquam luctus tellus viverra ut.
-                        </p>
                     </div>
                 </div>
                 {/* Card slide deck */}

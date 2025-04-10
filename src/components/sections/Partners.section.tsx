@@ -49,10 +49,8 @@ const PartnersSection: React.FC = () => {
                         Join the SPUR Community
                     </Header>
                     <p className="text-center text-lg w-2/3">
-                        Placerat maecenas aliquam primis duis viverra integer.
-                        Vehicula nulla bibendum facilisis per quis vehicula
-                        risus donec euismod. Curabitur aliquet sem vel fermentum
-                        lacinia.
+                        Join SPUR's ever-increasing ecosystem of innovative partners and companies,
+                        working together to drive impactful change and foster collaboration.
                     </p>
                 </div>
                 <div className="flex flex-col items-center md:flex-row gap-5 md:gap-10 w-fit">

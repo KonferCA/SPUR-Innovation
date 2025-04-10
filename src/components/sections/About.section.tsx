@@ -20,17 +20,16 @@ const AboutSection: React.FC = () => {
                 <div className="absolute top-1/2 lg:top-7/12 left-1/2 transform -translate-x-1/2 flex flex-col lg:flex-row w-2/3 lg:w-5/6 xl:w-2/3">
                     <Header
                         size="h2"
-                        className="w-full text-center lg:text-end lg:pr-8 xl:pr-10 pt-4 mb-4"
+                        className="flex flex-col flex-nowrap w-full text-center lg:text-end text-nowrap lg:pr-8 xl:pr-10 pt-4 mb-4"
                     >
                         Our Mandate
                     </Header>
                     <div className="flex flex-col items-center lg:items-start text-center lg:text-left md:px-10 lg:px-8">
                         <p className="mb-6">
-                            Placerat maecenas aliquam primis duis viverra
-                            integer. Vehicula nulla bibendum facilisis per quis
-                            vehicula risus donec euismod. Curabitur aliquet sem
-                            vel fermentum lacinia. Aliquam sodales neque lorem,
-                            aliquam luctus tellus viverra ut.
+                            The rapid advancements in AI, quantum computing, and high-performance computing have created massive demand for cutting-edge innovation and data centers. We are experts in building and converting legacy commercial industrial real estate to quickly and efficiently meet this emerging demand.
+                        </p>
+                        <p className="mb-6">
+                            At SPUR, our mandate is to ignite a culture of relentless innovation, foster a thriving community, and drive unparalleled success. We are committed to pushing boundaries, empowering individuals, and transforming industries through cutting-edge technology and visionary leadership.
                         </p>
                         <Button
                             intent="secondary"
