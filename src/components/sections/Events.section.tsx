@@ -43,7 +43,7 @@ const EventsSection: React.FC = () => {
     ];
     return (
         <div>
-            <section className="relative px-2 sm:px-10 lg:h-screen flex flex-col justify-center items-center bg-nearBlack">
+            <section className="relative px-2 sm:px-10 lg:h-screen flex flex-col justify-center items-center bg-[radial-gradient(ellipse_80%_30%_at_50%_30%,_rgba(244,250,255,0.12),_transparent_70%)] bg-nearBlack">
                 {/* Title */}
                 <div className="flex flex-col items-center text-6xl mt-28">
                     <Header size="h1" gradient="right">

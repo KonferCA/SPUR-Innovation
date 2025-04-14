@@ -4,7 +4,7 @@ import { HalfEllipse } from "@assets";
 const AboutSection: React.FC = () => {
     return (
         <div>
-            <section className="relative flex flex-col justify-between items-center 2xl:h-screen bg-[#050B10] to-10% py-4 lg:py-20">
+            <section className="relative flex flex-col justify-between items-center 2xl:h-screen bg-nearBlack py-4 lg:py-20">
                 <div className="flex flex-col items-center pt-30 lg:pt-20 px-5 sm:px-10">
                     <Header size="h1" gradient="right">
                         A Community Spurring

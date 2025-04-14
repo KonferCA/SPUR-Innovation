@@ -5,7 +5,7 @@ import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 const FooterSection: React.FC = () => {
     return (
         <div>
-            <section className="relative bg-[#050B10] to-10% px-10 xl:px-28 py-16">
+            <section className="relative px-10 xl:px-28 py-16 bg-gradient-to-b from-nearBlack/10 via-nearBlack/20 to-spurOrange/20">
                 <div className="flex flex-col gap-10 xl:gap-0 xl:flex-row justify-center xl:justify-between items-center xl:items-start">
                     {/* Logo */}
                     <img src={SpurLogoV2} className="w-1/2 xl:w-1/3" />
