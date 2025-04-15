@@ -24,8 +24,10 @@ type EventCarouselProps = {
 };
 
 const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
-    const isLarge = useMediaQuery("(min-width: 1024px)");
-    const visibleCount = isLarge ? 3 : 1;
+    const isVeryLarge = useMediaQuery("(min-width: 1850px)");
+    const isLarge = useMediaQuery("(min-width: 1350px)");
+    const isMedium = useMediaQuery("(min-width: 800px)");
+    const visibleCount = isVeryLarge ? 4 : isLarge ? 3 : isMedium ? 2 : 1;
     const [activeIndex, setActiveIndex] = useState(0);
 
     // Move to next group if there's room
@@ -76,10 +78,10 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                         // Each Event
                         <div
                             key={index}
-                            className="relative flex flex-col justify-between h-full bg-nearBlack/5 backdrop-blur-3xl p-8 border border-white/30 rounded-4xl text-white shadow-inner-custom"
+                            className="size-100 relative flex flex-col justify-between h-full bg-nearBlack/5 backdrop-blur-3xl p-8 border border-white/30 rounded-4xl text-white shadow-inner-custom"
                         >
                             {/* Event Image */}
-                            <div className="w-full h-1/2 max-h-96 rounded-2xl overflow-hidden">
+                            <div className="self-center h-50 h-1/2 max-h-96 rounded-2xl overflow-hidden">
                                 <img
                                     src={event.image}
                                     alt={event.title}
@@ -88,11 +90,11 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                             </div>
 
                             {/* Tags */}
-                            <div className="flex flex-wrap gap-2 mt-3">
+                            <div className="grid grid-rows-2 grid-cols-3 gap-2 mt-3">
                                 {event.tags.map((tag, i) => (
                                     <span
                                         key={i}
-                                        className="uppercase bg-radial-[at_-50%_-50%] from-lightSpurOrange to-darkNavy text-spurOrangeText text-xs px-4 py-2 rounded-full"
+                                        className="col-span-1 row-span-1 text-center uppercase bg-radial-[at_-50%_-50%] from-lightSpurOrange to-darkNavy text-spurOrangeText text-xs px-3 py-1 rounded-full"
                                     >
                                         {tag}
                                     </span>
@@ -106,7 +108,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
 
                             {/* Description */}
                             <p className="text-sm text-gray-200 mt-2">
-                                {event.description}
+                                {event.description.length > 100 ? event.description.slice(0, 98) + "..." : event.description}
                             </p>
 
                             {/* Date & Location */}
