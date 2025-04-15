@@ -43,14 +43,15 @@ const PartnersSection: React.FC = () => {
     ];
     return (
         <div>
-            <section className="relative h-screen bg-nearBlack to-10% flex flex-col gap-10 md:gap-20 items-center justify-center">
+            <section className="relative h-screen flex flex-col gap-10 md:gap-20 items-center justify-center bg-[radial-gradient(ellipse_40%_60%_at_50%_50%,_rgba(244,250,255,0.12),_transparent_70%)] bg-nearBlack">
                 <div className="flex flex-col items-center gap-10 text-6xl px-10 md:px-6 lg:px-0">
                     <Header size="h1" gradient="right">
                         Join the SPUR Community
                     </Header>
                     <p className="text-center text-lg w-2/3">
-                        Join SPUR's ever-increasing ecosystem of innovative partners and companies,
-                        working together to drive impactful change and foster collaboration.
+                        Join SPUR's ever-increasing ecosystem of innovative
+                        partners and companies, working together to drive
+                        impactful change and foster collaboration.
                     </p>
                 </div>
                 <div className="flex flex-col items-center md:flex-row gap-5 md:gap-10 w-fit">
@@ -76,9 +77,8 @@ const PartnersSection: React.FC = () => {
                     className="mt-6"
                 >
                     {partners.map((partner, index) => (
-                        <Slider.Slide>
+                        <Slider.Slide key={index}>
                             <img
-                                key={index}
                                 src={partner.image}
                                 alt={partner.title}
                                 className="h-18"
