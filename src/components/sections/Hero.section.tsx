@@ -1,4 +1,4 @@
-import { SpurBuilding, xLogo } from "@assets";
+import { SpurCampus, xLogo } from "@assets";
 import { Button } from "@components";
 import {
     DoubleArrowDownIcon,
@@ -56,11 +56,11 @@ const HeroSection: React.FC = () => {
                         </Button>
                     </div>
                     {/* subdiv: building image */}
-                    <div className="order-1 lg:order-2 w-3/4 lg:w-full max-w-[650px] 2xl:w-1/2 justify-center z-20">
+                    <div className="order-1 lg:order-2 w-3/4 lg:w-full max-w-[950px] 2xl:w-1/2 justify-center z-20">
                         <img
-                            src={SpurBuilding}
+                            src={SpurCampus}
                             className="w-full"
-                            alt="Spur Building"
+                            alt="Spur Campus"
                         />
                     </div>
                     {/* subdiv: right stats */}
