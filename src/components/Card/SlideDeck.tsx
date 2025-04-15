@@ -55,7 +55,7 @@ const SlideDeckComponent: React.FC = () => {
 				<img
 					src={activeCard.image}
 					alt={activeCard.title}
-					className="w-full h-full object-cover rounded-2xl max-h-[300px] sm:max-h-[400px] lg:max-h-[450px]"
+					className="w-full h-full object-cover rounded-2xl max-h-[300px] sm:max-h-[350px] lg:max-h-[400px]"
 				/>
 			</div>
 			{/* Title, Description, Buttons */}
