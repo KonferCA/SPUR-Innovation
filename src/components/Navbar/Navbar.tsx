@@ -4,6 +4,14 @@ import { SpurIcon } from "@assets";
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { motion, AnimatePresence } from "framer-motion";
 
+const navbarLinks = [
+    { name: "About us", href: "#about" },
+    { name: "Resources", href: "#resources" },
+    { name: "Innovation Fund", href: "#innovationfund" },
+    { name: "News", href: "#news" },
+    { name: "Partners", href: "#partners" },
+];
+
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -44,18 +52,15 @@ const Navbar: React.FC = () => {
                         transition={{ duration: 0.25 }}
                         className="md:hidden absolute top-0 left-0 w-full bg-nearBlack/95 py-6 pt-20 pb-10 flex flex-col justify-center items-center gap-2 shadow-md"
                     >
-                        <a href="#about" onClick={() => setMenuOpen(false)}>
-                            About us
-                        </a>
-                        <a href="#resources" onClick={() => setMenuOpen(false)}>
-                            Resources
-                        </a>
-                        <a href="#news" onClick={() => setMenuOpen(false)}>
-                            News
-                        </a>
-                        <a href="#partners" onClick={() => setMenuOpen(false)}>
-                            Partners
-                        </a>
+                        {navbarLinks.map((link) => (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                className="text-white text-lg font-thin hover:text-spurOrange transition-colors duration-300"
+                            >
+                                {link.name}
+                            </a>
+                        ))}
                         <div className="flex flex-col gap-2 mt-4">
                             {investorButton}
                             {letsTalkButton}
@@ -77,10 +82,15 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="hidden md:flex gap-x-5 font-thin">
-                    <a href="#about">About us</a>
-                    <a href="#resources">Resources</a>
-                    <a href="#news">News</a>
-                    <a href="#partners">Partners</a>
+                    {navbarLinks.map((link) => (
+                        <a
+                            key={link.name}
+                            href={link.href}
+                            className="hover:text-spurOrange transition-colors duration-300"
+                        >
+                            {link.name}
+                        </a>
+                    ))}
                 </div>
 
                 <div className="absolute left-1/2 transform -translate-x-1/2">

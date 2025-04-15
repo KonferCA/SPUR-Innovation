@@ -1,5 +1,3 @@
-import { Button } from "@components";
-import { Vexacool } from "@assets";
 import { useState } from "react";
 import {
     ArrowTopRightIcon,
@@ -7,39 +5,28 @@ import {
     CaretRightIcon,
 } from "@radix-ui/react-icons";
 
+import { Button } from "@components";
+import { KonferLogo, RedBlueQuantumLogo } from "@assets";
+
 const CardComponent: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const cards = [
-        {
-            id: 1,
-            title: "Vexacool Project",
-            description:
-                "Placerat maecenas aliquam primis duis viverra integer. Vehicula nulla bibendum facilisis per quis vehicula risus donec euismod.",
-            image: Vexacool,
-        },
-        {
-            id: 2,
-            title: "Vexawarm Project",
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-            image: Vexacool,
-        },
-        {
-            id: 3,
-            title: "Project Zeus",
-            description:
-                "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.",
-            image: Vexacool,
-        },
-        {
-            id: 4,
-            title: "Project Thor",
-            description:
-                "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.",
-            image: Vexacool,
-        },
-    ];
+		{
+			id: 1,
+			title: "Konfer Inc.",
+			description:
+				"We bridge innovative companies with the next generation of tech talent through organizing high-impact initiatives. 🚀",
+			image: KonferLogo,
+		},
+		{
+			id: 2,
+			title: "Red Blue Quantum",
+			description:
+				"Turning ideas into experiments",
+			image: RedBlueQuantumLogo,
+		},
+	];
 
     // Function to handle the next card in the carousel
     const handleNext = () => {
@@ -104,7 +91,9 @@ const CardComponent: React.FC = () => {
                         <CaretRightIcon />
                     </button>
                 </div>
-                <Button intent="secondary" className="whitespace-nowrap">View Project</Button>
+                <Button intent="secondary" className="whitespace-nowrap" link="https://onboard.spuric.com/" newtab>
+                    View Project
+                </Button>
             </div>
         </div>
     );
