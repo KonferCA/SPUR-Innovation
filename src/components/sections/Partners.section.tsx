@@ -54,7 +54,7 @@ const PartnersSection: React.FC = () => {
                         impactful change and foster collaboration.
                     </p>
                 </div>
-                <div className="flex flex-col items-center md:flex-row gap-5 md:gap-10 w-fit">
+                <div className="flex flex-col items-center justify-center md:flex-row gap-5 md:gap-10 w-fit">
                     <Button
                         intent="tertiary"
                         link="https://capital.spuric.com/partners"
@@ -65,7 +65,7 @@ const PartnersSection: React.FC = () => {
                     <Button
                         intent="secondary"
                         link="mailto:info@spuric.com"
-                        className="w-fit"
+                        className="w-full md:w-fit h-full text-center flex items-center justify-center py-2 md:py-0"
                     >
                         Contact us
                     </Button>
