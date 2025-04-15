@@ -12,21 +12,22 @@ const CardComponent: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const cards = [
-		{
-			id: 1,
-			title: "Konfer Inc.",
-			description:
-				"We bridge innovative companies with the next generation of tech talent through organizing high-impact initiatives. 🚀",
-			image: KonferLogo,
-		},
-		{
-			id: 2,
-			title: "Red Blue Quantum",
-			description:
-				"Turning ideas into experiments",
-			image: RedBlueQuantumLogo,
-		},
-	];
+        {
+            id: 1,
+            title: "Konfer Inc.",
+            description:
+                "We bridge innovative companies with the next generation of tech talent through organizing high-impact initiatives. 🚀",
+            image: KonferLogo,
+            link: "https://konfer.ca/",
+        },
+        {
+            id: 2,
+            title: "Red Blue Quantum",
+            description: "Turning ideas into experiments",
+            image: RedBlueQuantumLogo,
+            link: "https://www.rbquantum.com/",
+        },
+    ];
 
     // Function to handle the next card in the carousel
     const handleNext = () => {
@@ -55,12 +56,18 @@ const CardComponent: React.FC = () => {
                     <h2 className="text-2xl sm:text-4xl flex text-white font-thin mr-2 sm:mr-6 text-center sm:text-start">
                         {activeCard.title}
                     </h2>
-                    <ArrowTopRightIcon width={22} height={22} className="animate-pulse" />
+                    <ArrowTopRightIcon
+                        width={22}
+                        height={22}
+                        className="animate-pulse"
+                    />
                 </div>
             </div>
             {/* Description */}
             <div className="mt-3">
-                <p className="text-sm text-white text-center sm:text-start">{activeCard.description} </p>
+                <p className="text-sm text-white text-center sm:text-start">
+                    {activeCard.description}{" "}
+                </p>
             </div>
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-10">
@@ -91,7 +98,13 @@ const CardComponent: React.FC = () => {
                         <CaretRightIcon />
                     </button>
                 </div>
-                <Button intent="secondary" className="whitespace-nowrap" link="https://onboard.spuric.com/" newtab>
+
+                <Button
+                    intent="secondary"
+                    className="whitespace-nowrap"
+                    link={activeCard.link}
+                    newtab
+                >
                     View Project
                 </Button>
             </div>
