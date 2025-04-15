@@ -1,44 +1,53 @@
-import { Vexacool } from "@assets";
+import { Vexacool, SpurHacksBanner, HawkHacksBanner, CUCAIBanner, NVIDIA_GTC_Banner } from "@assets";
 import { EventCarousel, Header } from "@components";
 
 const EventsSection: React.FC = () => {
     const events = [
         {
-            image: Vexacool,
-            tags: ["Tech", "AI"],
-            title: "Future of AI Conference",
+            image: SpurHacksBanner,
+            tags: ["Hackathon", "Business", "Networking", "Tech"],
+            title: "SpurHacks 2025",
             description:
-                "Explore the latest trends in AI and machine learning.",
-            date: "March 15, 2025",
-            location: "San Francisco, CA",
-            link: "https://example.com",
+                "SpurHacks is Canada's largest hackathon, with over 2,000 attendees and $100k in prizes, hosted by SPUR.",
+            date: "June 20th, , 2025",
+            location: "Waterloo, ON, Canada",
+            link: "https://spurhacks.com",
+        },
+        {
+            image: HawkHacksBanner,
+            tags: ["Hackathon", "Business", "Networking", "Tech"],
+            title: "HawkHacks 2025",
+            description: "The second-largest student-run hackathon in Canada, hosted by Wilfrid Laurier University.",
+            date: "July 25th, 2025",
+            location: "Waterloo, ON, Canada",
+            link: "https://hawkhacks.ca",
+        },
+        {
+            image: CUCAIBanner,
+            tags: ["Business", "Networking"],
+            title: "CUCAI 2025",
+            description: "CUCAI is a not-for-profit conference that unites over 320 of Canada's brightest AI minds run entirely by passionate undergraduate volunteers",
+            date: "March 8th, 2025",
+            location: "Toronto, ON, Canada",
+            link: "https://cucai.ca/",
+        },
+        {
+            image: NVIDIA_GTC_Banner,
+            tags: ["Business", "AI", "Tech"],
+            title: "NVIDIA GTC 2025",
+            description: "Business leaders recognize the significant impact AI is having on industries, from improved customer experiences to product innovation.",
+            date: "March 17th, 2025",
+            location: "San Jose, CA, USA",
+            link: "https://nvidia.com/gtc/",
         },
         {
             image: Vexacool,
-            tags: ["Business", "Networking"],
-            title: "Event2",
-            description: "Meet founders, VCs, and industry leaders.",
-            date: "April 10, 2025",
-            location: "New York, NY",
-            link: "https://example.com",
-        },
-        {
-            image: Vexacool,
-            tags: ["Business", "Networking"],
-            title: "Event3",
-            description: "Meet founders, VCs, and industry leaders.",
-            date: "April 10, 2025",
-            location: "New York, NY",
-            link: "https://example.com",
-        },
-        {
-            image: Vexacool,
-            tags: ["Business", "Networking"],
-            title: "Event4",
-            description: "Meet founders, VCs, and industry leaders.",
-            date: "April 10, 2025",
-            location: "New York, NY",
-            link: "https://example.com",
+            tags: ["Hackathon", "Tech"],
+            title: "HackCanada 2025",
+            description: "Hackers of all ages and skill levels from Canada and beyond to solve pressing challenges with technology.",
+            date: "February 21st, 2025",
+            location: "Waterloo, ON, Canada",
+            link: "https://hackcanada.org/",
         },
     ];
     return (
