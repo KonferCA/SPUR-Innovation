@@ -1,5 +1,5 @@
 import { Button, Header } from "@components";
-import { SpurLogoV2, xLogo } from "@assets";
+import { SpurTitle, xLogo } from "@assets";
 import { InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 
 const FooterSection: React.FC = () => {
@@ -8,7 +8,7 @@ const FooterSection: React.FC = () => {
             <section className="relative px-10 xl:px-28 py-16 bg-gradient-to-b from-nearBlack/10 via-nearBlack/20 to-spurOrange/20">
                 <div className="flex flex-col gap-10 xl:gap-0 xl:flex-row justify-center xl:justify-between items-center xl:items-start">
                     {/* Logo */}
-                    <img src={SpurLogoV2} className="w-1/2 xl:w-1/3" />
+                    <img src={SpurTitle} className="w-1/2 xl:w-1/3" />
                     {/* Directory */}
                     <div className="flex gap-10 w-1/3 justify-center text-center xl:text-start">
                         <div className="flex flex-col gap-2">

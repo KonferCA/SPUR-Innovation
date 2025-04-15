@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@components";
-import { SpurLogo } from "@assets";
+import { SpurIcon } from "@assets";
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div className="absolute left-1/2 transform -translate-x-1/2">
-                    <img src={SpurLogo} className="w-8" alt="SpurLogo" />
+                    <img src={SpurIcon} className="w-8" alt="SpurIcon" />
                 </div>
 
                 <div className="hidden md:flex gap-x-5">
