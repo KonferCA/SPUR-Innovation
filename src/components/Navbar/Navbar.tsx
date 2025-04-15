@@ -1,11 +1,21 @@
+import React, { useState, useEffect } from "react";
 import { Button } from "@components";
 import { SpurLogo } from "@assets";
-import React, { useState } from "react";
 import { HamburgerMenuIcon, Cross2Icon } from "@radix-ui/react-icons";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     const investorButton = (
         <Button intent="primary" link="https://onboard.spuric.com/" newtab>
@@ -20,8 +30,11 @@ const Navbar: React.FC = () => {
     );
 
     return (
-        <header className="fixed w-full z-50">
-            {/* Mobile Menu (only shown when open) */}
+        <header
+            className={`fixed w-full z-50 transition-colors duration-300 ${
+                isScrolled ? "bg-gradient-to-b from-nearBlack from-40% via-nearBlack/60 via-70% to-nearBlack/0 focus:outline-none" : ""
+            }`}
+        >
             <AnimatePresence>
                 {menuOpen && (
                     <motion.div
@@ -52,7 +65,6 @@ const Navbar: React.FC = () => {
             </AnimatePresence>
 
             <div className="flex items-center justify-between px-6 md:px-10 py-6 relative">
-                {/* Hamburger (mobile only) */}
                 <div
                     className="md:hidden z-50 hover:cursor-pointer"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -64,7 +76,6 @@ const Navbar: React.FC = () => {
                     )}
                 </div>
 
-                {/* Desktop Nav Links */}
                 <div className="hidden md:flex gap-x-5 font-thin">
                     <a href="#about">About us</a>
                     <a href="#resources">Resources</a>
@@ -72,12 +83,10 @@ const Navbar: React.FC = () => {
                     <a href="#partners">Partners</a>
                 </div>
 
-                {/* Logo */}
                 <div className="absolute left-1/2 transform -translate-x-1/2">
                     <img src={SpurLogo} className="w-8" alt="SpurLogo" />
                 </div>
 
-                {/* Desktop Buttons */}
                 <div className="hidden md:flex gap-x-5">
                     {investorButton}
                     {letsTalkButton}
