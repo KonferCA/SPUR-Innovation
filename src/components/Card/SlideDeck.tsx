@@ -1,5 +1,3 @@
-import { Button } from "@components";
-import { Vexacool } from "@assets";
 import { useState } from "react";
 import {
 	ArrowTopRightIcon,
@@ -7,30 +5,26 @@ import {
 	CaretRightIcon,
 } from "@radix-ui/react-icons";
 
+import { Button } from "@components";
+import { KonferLogo, RedBlueQuantumLogo } from "@assets";
+
 const SlideDeckComponent: React.FC = () => {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	const cards = [
 		{
 			id: 1,
-			title: "This Company Inc.",
+			title: "Konfer Inc.",
 			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-			image: Vexacool,
+				"We bridge innovative companies with the next generation of tech talent through organizing high-impact initiatives. 🚀",
+			image: KonferLogo,
 		},
 		{
 			id: 2,
-			title: "That Company co.",
+			title: "Red Blue Quantum",
 			description:
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-			image: Vexacool,
-		},
-		{
-			id: 3,
-			title: "Who's Company Ltd.",
-			description:
-				"Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.",
-			image: Vexacool,
+				"Turning ideas into experiments",
+			image: RedBlueQuantumLogo,
 		},
 	];
 
@@ -49,7 +43,7 @@ const SlideDeckComponent: React.FC = () => {
 	const activeCard = cards[activeIndex];
 
 	return (
-		<div className="flex flex-col p-8 sm:p-12 text-white">
+		<div className="flex flex-col p-8 sm:p-12 text-white self-center">
 			{/* Image */}
 			<div className="relative w-full">
 				<img
@@ -81,7 +75,7 @@ const SlideDeckComponent: React.FC = () => {
 							<CaretLeftIcon />
 						</button>
 						{/* Track Progress - Small Rectangles */}
-						<div className="flex justify-center space-x-2">
+						<div className="flex align-center space-x-2">
 							{cards.map((_, index) => (
 								<div
 									key={index}

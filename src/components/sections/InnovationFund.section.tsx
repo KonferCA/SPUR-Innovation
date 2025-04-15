@@ -32,12 +32,12 @@ const InnovationFundSection: React.FC = () => {
                         >
                             Learn More
                         </Button>
-                        <div className="flex flex-col justify-center lg:gap-6 mt-4 xl:mt-16 text-center lg:text-left">
+                        {/* <div className="flex flex-col justify-center lg:gap-6 mt-4 xl:mt-16 text-center lg:text-left">
                             <h1 className="lg:pl-2 text-5xl">Revenue</h1>
                             <h1 className="text-7xl sm:text-8xl xl:text-9xl">
                                 89%
                             </h1>
-                        </div>
+                        </div> */}
                     </div>
                     {/* Card slide deck (Right-section) */}
                     <div className="relative flex lg:w-1/2 lg:max-w-5xl h-full mt-8 sm:mt-0">
