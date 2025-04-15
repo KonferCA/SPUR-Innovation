@@ -26,3 +26,10 @@ import UW_logo from "./partners/UW_logo.png";
 import WLU_logo from "./partners/WLU_logo.png";
 
 export { McGill_logo, Queens_logo, TMU_logo, UBC_logo, UW_logo, WLU_logo };
+
+import SpurHacksBanner from "./events/spurhacks_banner.svg";
+import HawkHacksBanner from "./events/hawkhacks_banner.png";
+import CUCAIBanner from "./events/cucai_banner.png";
+import NVIDIA_GTC_Banner from "./events/nvidia_gtc_banner.jpg";
+
+export { SpurHacksBanner, HawkHacksBanner, CUCAIBanner, NVIDIA_GTC_Banner }
