@@ -59,7 +59,7 @@ const SlideDeckComponent: React.FC = () => {
 					<h2 className="text-2xl sm:text-4xl flex items-center text-white text-center sm:text-start">
 						{activeCard.title}
 					</h2>
-					<ArrowTopRightIcon width={22} height={22} />
+					<ArrowTopRightIcon width={22} height={22} className="animate-pulse" />
 				</div>
 				{/* Description */}
 				<p className="text-white mt-1 lg:mt-3 text-center sm:text-start grow">

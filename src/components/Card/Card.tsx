@@ -55,7 +55,7 @@ const CardComponent: React.FC = () => {
                     <h2 className="text-2xl sm:text-4xl flex text-white font-thin mr-2 sm:mr-6 text-center sm:text-start">
                         {activeCard.title}
                     </h2>
-                    <ArrowTopRightIcon width={22} height={22} />
+                    <ArrowTopRightIcon width={22} height={22} className="animate-pulse" />
                 </div>
             </div>
             {/* Description */}

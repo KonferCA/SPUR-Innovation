@@ -131,7 +131,7 @@ const EventCarousel: React.FC<EventCarouselProps> = ({ events }) => {
                                 className="flex w-fit text-sm gap-3 mt-4 uppercase hover:underline font-thin"
                             >
                                 Learn More
-                                <ArrowTopRightIcon width={20} height={20} />
+                                <ArrowTopRightIcon width={20} height={20} className="animate-pulse" />
                             </a>
                         </div>
                     ))}

@@ -44,7 +44,7 @@ const ResourcesSection: React.FC = () => {
                         >
                             <div className="flex w-full justify-between">
                                 <h1 className="text-2xl mb-10">{card.title}</h1>
-                                <ArrowTopRightIcon width={25} height={25} />
+                                <ArrowTopRightIcon className="animate-pulse" width={25} height={25} />
                             </div>
                             <p>{card.description}</p>
                         </div>

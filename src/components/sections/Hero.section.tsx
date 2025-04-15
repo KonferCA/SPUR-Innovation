@@ -56,7 +56,7 @@ const HeroSection: React.FC = () => {
                         </Button>
                     </div>
                     {/* subdiv: building image */}
-                    <div className="order-1 lg:order-2 w-3/4 lg:w-full max-w-[950px] 2xl:w-1/2 justify-center z-20">
+                    <div className="order-1 lg:order-2 w-3/4 lg:w-full max-w-[950px] 2xl:w-1/2 justify-center z-20" >
                         <img
                             src={SpurCampus}
                             className="w-full"
@@ -97,7 +97,7 @@ const HeroSection: React.FC = () => {
                         <Button intent="tertiary" link="#partners">
                             Get started
                         </Button>
-                        <DoubleArrowDownIcon width={16} height={16} />
+                        <DoubleArrowDownIcon width={16} height={16} className="animate-bounce"/>
                     </div>
                     <div className="flex gap-5 lg:w-1/3 lg:justify-end lg:self-end lg:pr-10">
                         <a
