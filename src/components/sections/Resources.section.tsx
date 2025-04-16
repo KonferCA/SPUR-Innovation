@@ -4,20 +4,16 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 const ResourcesSection: React.FC = () => {
     const cardData = [
         {
-            // TODO: dont talk aboujt coshare or office space, make more general
-            // TODO: change to: best in class data centers, flex tech, industrial, lab, and office space
-            //2M+ sqft of tech space
-            title: "Investments & Funding",
+            title: "Mentorship & Resources",
             description:
-                "SPUR manages a growing portfolio of data center assets, delivering exceptional value through strategic acquisitions. Our growth strategy combines disciplined capital allocation with technical expertise, allowing us to deliver exceptional returns for our investors while meeting the growing demand for advanced computing infrastructure.",
+                "SPUR empowers individuals to build their own startups from the ground up, offering comprehensive resources that guide them through every stage of the journey—from ideation to go-to-market strategies. By combining expert mentorship, strategic support, and access to cutting-edge infrastructure, SPUR enables innovators to transform their ideas into successful ventures while fostering a thriving ecosystem of entrepreneurship and innovation.",
         },
         {
-            title: "Flex Tech / Industrial / Lab / Office Space",
+            title: "Best-In-Class Data Centers, Flex Tech, Industrial, Lab, and Innovation Spaces",
             description:
-                "SPUR offers private and co-share office spaces across Canada’s leading tech hubs, including the Waterloo Region. Our locations are strategically positioned near major universities, colleges, and industry leaders like Google, Toyota, and OpenText. Designed for startups and established companies alike, our spaces provide access to cutting-edge infrastructure, vibrant communities, and essential amenities such as 24/7 access, conference rooms, high-speed internet, and more. With convenient access to public transportation and nearby commercial districts, SPUR office spaces are the perfect environment to foster innovation and collaboration.",
+                "With more than 2M sq. ft, SPUR offers bespoke locations across Canada’s leading tech hubs, such as Kitchener-Waterloo, Ottawa, and Mirabel-Montreal. Our locations are strategically positioned near major universities, colleges, and industry leaders such as Google, Toyota, and OpenText. Designed for startups, Fortune 500's, and SME's, our spaces provide access to cutting-edge infrastructure, vibrant communities, and essential amenities such as 24/7 access, conference rooms, high-speed internet, and more. With convenient access to public transportation and nearby commercial districts, SPUR spaces are the perfect environment to foster innovation and collaboration.",
         },
         {
-            // this is good
             title: "AI-Driven Data Centers",
             description:
                 "Strategic presence across major Canadian tech hubs, providing state-of-the-art facilities and infrastructure. SPUR's data centers are strategically located in Canada's technology corridors, offering clients access to reliable infrastructure, renewable energy sources, and optimal connectivity with minimal latency.",
@@ -35,9 +31,10 @@ const ResourcesSection: React.FC = () => {
                         Technological Advancements
                     </Header>
                     <p className="text-center text-lg w-full sm:w-2/3 mt-8 px-6">
-                        SPUR is pioneering the world's next generation of innovation and technology.  /** TODO: make it more generic */
+                        SPUR is pioneering the world's next generation of innovation and technology.
                     </p>
                 </div>
+
                 {/* Cards (will be converted into a component) */}
                 <div className="w-5/6 2xl:w-3/4 flex flex-col xl:flex-row gap-6 xl:gap-10">
                     {cardData.map((card, index) => (
