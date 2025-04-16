@@ -5,7 +5,7 @@ import {
     ResourcesSection,
     MarketplaceSection,
     FooterSection,
-    InnovationFundSection,
+    // InnovationFundSection,
     PartnersSection,
     EventsSection,
 } from "@components";
