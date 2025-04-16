@@ -1,4 +1,4 @@
-import { Vexacool, SpurHacksBanner, HawkHacksBanner, CUCAIBanner, NVIDIA_GTC_Banner } from "@assets";
+import { Vexacool, SpurHacksBanner, HawkHacksBanner, CUCAIBanner, NvidiaGTCBanner } from "@assets";
 import { EventCarousel, Header } from "@components";
 
 const EventsSection: React.FC = () => {
@@ -32,7 +32,7 @@ const EventsSection: React.FC = () => {
             link: "https://cucai.ca/",
         },
         {
-            image: NVIDIA_GTC_Banner,
+            image: NvidiaGTCBanner,
             tags: ["Business", "AI", "Tech"],
             title: "NVIDIA GTC 2025",
             description: "Business leaders recognize the significant impact AI is having on industries, from improved customer experiences to product innovation.",
@@ -52,7 +52,7 @@ const EventsSection: React.FC = () => {
     ];
     return (
         <div>
-            <section className="relative px-2 sm:px-10 lg:h-screen flex flex-col justify-center items-center bg-[radial-gradient(ellipse_80%_30%_at_50%_30%,_rgba(244,250,255,0.12),_transparent_70%)] bg-nearBlack">
+            <section className="relative px-2 sm:px-10 lg:h-screen flex flex-col justify-center items-center bg-[radial-gradient(ellipse_120%_120%_at_0%_0%,_rgba(245,144,71,0.85),_transparent_70%)] bg-nearBlack">
                 {/* Title */}
                 <div className="flex flex-col items-center text-6xl mt-28">
                     <Header size="h1" gradient="right">
