@@ -26,14 +26,6 @@ const AboutSection: React.FC = () => {
                     </Header>
                     <div className="flex flex-col items-center xl:items-start text-center xl:text-left md:px-10 xl:px-8">
                         <p className="mb-6">
-                            The rapid advancements in AI, quantum computing, and
-                            high-performance computing have created massive
-                            demand for cutting-edge innovation and data centers.
-                            We are experts in building and converting legacy
-                            commercial industrial real estate to quickly and
-                            efficiently meet this emerging demand.
-                        </p>
-                        <p className="mb-6">
                             At SPUR, our mandate is to ignite a culture of
                             relentless innovation, foster a thriving community,
                             and drive unparalleled success. We are committed to

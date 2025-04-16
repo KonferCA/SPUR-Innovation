@@ -21,15 +21,15 @@ const MarketplaceSection: React.FC = () => {
                             Featured Projects
                         </Header> */}
                         <p className="my-10 text-pretty">
-                            Launching a startup? Looking for freelance work?
-                            Onboard by SPUR is a community-driven platform that
-                            connects startups with talented individuals and
-                            freelancers. Our mission is to foster innovation and
-                            collaboration by providing a space where ideas can
-                            flourish and partnerships can thrive. Whether you're
-                            a startup seeking talent or an individual looking
-                            for exciting opportunities, Onboard by SPUR is here
-                            to help you succeed. Onboard by SPUR features a
+                            Launching a startup? Looking for funding, work, or resources? Onboard by SPUR is a community-driven platform
+                            that connects startups with world-class resources, talented individuals and
+                            freelancers.
+
+                            Our mission is to foster innovation and collaboration by providing a ecosysytem where ideas can flourish and partnerships can thrive.
+
+                            Whether you're a startup seeking talent or an individual looking
+                            for exciting opportunities, or an investor looking for the next
+                            unicorn startup, Onboard by SPUR is here to help you succeed. Onboard by SPUR features a
                             blockchain‑based marketplace platform for investors,
                             featuring secure document review workflows and
                             direct funding capabilities.
