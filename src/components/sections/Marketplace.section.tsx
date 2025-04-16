@@ -34,6 +34,21 @@ const MarketplaceSection: React.FC = () => {
                             featuring secure document review workflows and
                             direct funding capabilities.
                         </p>
+                        <Header
+                            size="h1"
+                            gradient="right"
+                            className="flex justify-center lg:justify-start"
+                        >
+                            SPUR Innovation Fund
+                        </Header>
+                        <p className="my-10 text-pretty">
+                            The SPUR Innovation Fund empowers students,
+                            developers, and entrepreneurs to bring their
+                            world-changing ideas to life. Apply for funding and
+                            turn your vision into reality with the support of a
+                            community dedicated to driving innovation and
+                            impact.
+                        </p>
                         <Button
                             intent="secondary"
                             link="https://onboard.spuric.com/"

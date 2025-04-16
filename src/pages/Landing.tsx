@@ -24,12 +24,13 @@ const Landing: React.FC = () => {
                 <div id="resources">
                     <ResourcesSection />
                 </div>
-                <div id="marketplace">
+                <div id="innovationfund">
+                {/* <div id="marketplace"> */}
                     <MarketplaceSection />
                 </div>
-                <div id="innovationfund">
+                {/* <div id="innovationfund">
                     <InnovationFundSection />
-                </div>
+                </div> */}
                 <div id="news">
                     <EventsSection />
                 </div>
