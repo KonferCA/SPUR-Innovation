@@ -1,46 +1,60 @@
 import {
-    McGill_logo,
-    Queens_logo,
-    TMU_logo,
-    UBC_logo,
-    UW_logo,
-    WLU_logo,
+    McGillLogo,
+    QueensLogo,
+    TMULogo,
+    UBCLogo,
+    UWLogo,
+    WLULogo,
+
+    BlackberryLogo,
+    QNXLogo,
+    PurolatorLogo,
+    AvidbotsLogo,
+    FluidAiLogo,
+    CloudwifiLogo,
+    AlchemyLogo,
+    GeneracLogo,
+    DirectGlobalLogo,
+    FareEatsLogo,
+    NicoyaLogo,
+    CrawfordLogo,
+    MolexLogo,
+    MagnetLogo,
+    WSIBLogo,
+
+    KonferLogo
 } from "@assets";
 import { Button, Header, Slider } from "@components";
 
 const PartnersSection: React.FC = () => {
-    const partners = [
-        {
-            id: 1,
-            title: "McGill University",
-            image: McGill_logo,
-        },
-        {
-            id: 2,
-            title: "Queens University",
-            image: Queens_logo,
-        },
-        {
-            id: 3,
-            title: "Toronto Metropolitan University",
-            image: TMU_logo,
-        },
-        {
-            id: 4,
-            title: "University of British Columbia",
-            image: UBC_logo,
-        },
-        {
-            id: 5,
-            title: "University of Waterloo",
-            image: UW_logo,
-        },
-        {
-            id: 6,
-            title: "Wilfrid Laurier University",
-            image: WLU_logo,
-        },
+    const schools = [
+        { title: "McGill University", image: McGillLogo },
+        { title: "Queens University", image: QueensLogo },
+        { title: "Toronto Metropolitan University", image: TMULogo },
+        { title: "University of British Columbia", image: UBCLogo },
+        { title: "University of Waterloo", image: UWLogo },
+        { title: "Wilfrid Laurier University", image: WLULogo },
     ];
+
+    const companies = [
+        { title: "Blackberry", image: BlackberryLogo },
+        { title: "QNX", image: QNXLogo },
+        { title: "Purolator", image: PurolatorLogo },
+        { title: "Avidbots", image: AvidbotsLogo },
+        { title: "FluidAi", image: FluidAiLogo },
+        { title: "Cloudwifi", image: CloudwifiLogo },
+        { title: "Alchemy", image: AlchemyLogo },
+        { title: "Generac", image: GeneracLogo },
+        { title: "Direct Global", image: DirectGlobalLogo },
+        { title: "Fare Eats", image: FareEatsLogo },
+        { title: "Nicoya", image: NicoyaLogo },
+        { title: "Crawford", image: CrawfordLogo },
+        { title: "Molex", image: MolexLogo },
+        { title: "Magnet Forensics", image: MagnetLogo },
+        { title: "WSIB Ontario", image: WSIBLogo },
+        { title: "Konfer", image: KonferLogo },
+    ];
+
     return (
         <div>
             <section className="relative h-screen flex flex-col gap-10 md:gap-20 items-center justify-center bg-[radial-gradient(ellipse_40%_60%_at_50%_50%,_rgba(244,250,255,0.12),_transparent_70%)] bg-nearBlack">
@@ -76,16 +90,35 @@ const PartnersSection: React.FC = () => {
                     pauseOnHover
                     className="mt-6"
                 >
-                    {partners.map((partner, index) => (
+                    {schools.map((partner, index) => (
                         <Slider.Slide key={index}>
                             <img
                                 src={partner.image}
                                 alt={partner.title}
-                                className="h-18"
+                                className="w-auto h-20"
                             />
                         </Slider.Slide>
                     ))}
                 </Slider>
+
+                <Slider
+                    speed={25}
+                    direction="left"
+                    pauseOnHover
+                    className="mt-6"
+                    >
+                    {companies.map((company, index) => (
+                        <Slider.Slide key={index}>
+                            <img
+                                src={company.image}
+                                alt={company.title}
+                                className="w-auto h-20"
+                            />
+                        </Slider.Slide>
+                    ))}
+                </Slider>
+
+
             </section>
         </div>
     );
