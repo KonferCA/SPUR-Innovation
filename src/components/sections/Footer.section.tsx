@@ -103,10 +103,7 @@ const FooterSection: React.FC = () => {
                         </a>
                     </div>
                     <div className="flex flex-col lg:flex-row justify-center lg:justify-start items-center lg:items-start gap-4 lg:gap-16 text-center xl:text-start">
-                        <p>
-                            © 2025 SPUR Innovation. Konfer Inc. All rights
-                            reserved
-                        </p>
+                        <p>© 2025 SPUR Innovation Center. All rights reserved</p>
                         <p>Privacy Policy</p>
                         <p>Terms and Conditions</p>
                     </div>
