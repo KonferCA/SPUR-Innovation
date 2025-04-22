@@ -85,7 +85,7 @@ const HeroSection: React.FC = () => {
                 <div className="w-full lg:h-44 flex flex-col lg:flex-row gap-6 lg:gap-0 justify-center items-center mt-10 lg:mt-0 lg:pb-10 xl:pb-16">
                     <div className="flex flex-col lg:flex-row gap-4 lg:gap-10 text-center lg:text-start lg:justify-start lg:self-end lg:w-1/3 lg:pl-10">
                         <div>
-                            <p className="text-offWhite">Employees</p>
+                            <p className="text-offWhite">Jobs</p>
                             <h3>3195</h3>
                         </div>
                         <div>
